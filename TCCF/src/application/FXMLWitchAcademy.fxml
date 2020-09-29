@@ -12,7 +12,7 @@
             <Image url="@../imgs/FundoOpaco.png" />
          </image>
       </ImageView>
-      <Label layoutX="165.0" layoutY="15.0" prefHeight="83.0" prefWidth="832.0" text="Label" />
+      <Label layoutX="165.0" layoutY="15.0" prefHeight="83.0" prefWidth="832.0" text="Biblioteca Bookworm" />
       <ImageView fx:id="imgLogo" fitHeight="105.0" fitWidth="144.0" layoutX="1018.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imgs/agenda.png" />
@@ -23,6 +23,6 @@
             <Image url="@../imgs/Rectangle%203.png" />
          </image>
       </ImageView>
-      <Label layoutX="1224.0" layoutY="14.0" text="Label" />
+      <Label layoutX="1224.0" layoutY="14.0" text="X" />
    </children>
 </AnchorPane>
