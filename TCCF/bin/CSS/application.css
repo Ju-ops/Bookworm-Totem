@@ -1,0 +1,272 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/*fx:controller="application.FXMLFilmeController" #19323C styleClass="text-text"*/
+
+.text-field {
+	-fx-background-color: #AABBCC;
+	-fx-text-fill: #191919;
+	-fx-prompt-text-fill: #191919;
+	-fx-font-size: 25px;
+	-fx-opacity: 75%;
+	-fx-font-family: "Comic Sans MS";
+}
+
+.label {
+	-fx-text-fill: #19323C;
+	-fx-font-size: 83px;
+	-fx-font-family: "Comic Sans MS";
+}
+
+.separator {
+	-fx-background-color: #aabbcc;
+}
+
+.separator *.line {
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 0.5 0;  /*its make really one-pixel-border*/
+    -fx-border-color: #aabbcc;
+}
+
+.text-text {
+	-fx-text-fill: #19323c;
+	-fx-font-size: 25px;
+	-fx-font-family: "Comic Sans MS";
+}
+
+/* SCROLLs */
+
+.scroll-bar {
+	-fx-background-radius : 0.5em;
+	-fx-background-color : derive(#AABBCC,0.0%);
+}
+
+.scroll-bar:vertical .track{
+    -fx-background-color :derive(#AABBCC,0.0%);
+    -fx-border-color:transparent;
+    -fx-background-radius : 0.5em;
+    -fx-opacity: 50%;
+}
+
+.scroll-bar:vertical .increment-button ,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color : transparent;
+    -fx-background-radius : 0.5em;
+    -fx-padding :1.0 10.0 0.0 0.0;
+}
+
+ .scroll-bar:vertical .increment-arrow,
+ .scroll-bar:vertical .decrement-arrow{
+ 	-fx-background-color : transparent;
+    -fx-shape : " ";    
+    -fx-padding :0.0 0.50em;
+    -fx-background-radius : 0.5em;
+}
+
+.scroll-bar:horizontal .increment-button ,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color : transparent;
+    -fx-background-radius : 0.5em;
+    -fx-padding :1.0 10.0 0.0 0.0;
+}
+
+ .scroll-bar:horizontal .increment-arrow,
+ .scroll-bar:horizontal .decrement-arrow{
+ 	-fx-background-color : transparent;
+    -fx-shape : " ";    
+    -fx-padding :0.0 0.50em;
+    -fx-background-radius : 0.5em;
+}
+
+.scroll-bar:vertical .thumb,
+.scroll-bar:horizontal .thumb {
+    -fx-background-color :derive(#19323C,0.0%);
+    -fx-background-insets : 1.7, 0.0, 0.0;
+    -fx-background-radius : 0.5em;
+}
+
+.scroll-bar:vertical .thumb:hover,
+.scroll-bar:horizontal .thumb:hover {
+    -fx-background-color :derive(#19323C,0.0%);
+    -fx-background-insets : 3.0, 0.0, 0.0;
+    -fx-background-radius : 0.5em;
+}
+
+.scroll-bar:vertical .thumb:pressed,
+.scroll-bar:horizontal .thumb:pressed {
+    -fx-background-color :derive(#19323C,0.0%);
+    -fx-background-insets : 3.0, 0.0, 0.0;
+    -fx-background-radius : 0.5em;
+}
+
+.scroll-pane {
+	-fx-background-color : transparent;
+}
+
+.scroll-pane > .viewport  { 
+	-fx-background-color: transparent;
+		
+} 
+
+/* IDs Labels */ 
+
+.label#lblLocal {
+	-fx-text-fill: #FCFCFC;
+	-fx-font-size: 20px;
+}
+
+.label#lblTituloL {
+	-fx-text-fill: #FCFCFC;
+	-fx-font-size: 20px;
+}
+
+.label#lblAutor {
+	-fx-text-fill: #FCFCFC;
+	-fx-font-size: 20px;
+}
+
+.label#lblGenero {
+	-fx-text-fill: #FCFCFC;
+	-fx-font-size: 20px;
+}
+
+.label#lblDisponiveis {
+	-fx-text-fill: #FCFCFC;
+	-fx-font-size: 20px;
+}
+
+.label#lblAno {
+	-fx-text-fill: #FCFCFC;
+	-fx-font-size: 20px;
+}
+
+.label#lblDiretor {
+	-fx-text-fill: #FCFCFC;
+	-fx-font-size: 20px;
+}
+
+.label#lblCompositor {
+	-fx-text-fill: #FCFCFC;
+	-fx-font-size: 20px;
+}
+
+.label#lbl {
+	-fx-text-fill: #FCFCFC;
+	-fx-font-size: 20px;
+}
+
+.label#lblSair {
+	-fx-text-fill: #12242b;
+	-fx-font-size: 25px;
+	-fx-font-family: "Comic Sans MS";
+}
+
+.label#lblSair:hover {
+	-fx-text-fill: #607078;
+}
+
+.text-text#lblSinopse {
+	-fx-font-family: "Comic Sans MS";
+	-fx-font-size: 15px;
+}
+
+/* IDs Buttons  */
+
+.button#btnPesquisar,
+.button#btnProximo,
+.button#btnAnterior,
+.button#btnVoltar {
+	-fx-background-color: transparent;
+}
+
+.button:hover#btnAnterior,
+.button:hover#btnProximo,
+.button:hover#btnVoltar {
+	-fx-opacity: 80%; 
+}
+
+.button:hover#btnPesquisar {
+	-fx-opacity: 85%; 
+}
+
+.button#btnLivro1,
+.button#btnLivro2,
+.button#btnLivro3,
+.button#btnLivro4,
+.button#btnLivro5,
+.button#btnLivro6 {
+	-fx-background-color: transparent;
+}
+
+.button:hover#btnLivro1,
+.button:hover#btnLivro2,
+.button:hover#btnLivro3,
+.button:hover#btnLivro4,
+.button:hover#btnLivro5,
+.button:hover#btnLivro6 {
+	-fx-opacity: 80%;
+}
+
+.button:pressed#btnLivro1,
+.button:pressed#btnLivro2,
+.button:pressed#btnLivro3,
+.button:pressed#btnLivro4,
+.button:pressed#btnLivro5,
+.button:pressed#btnLivro6 {
+	-fx-border-color: transparent;
+	-fx-border-width: 0.15em;
+}
+
+.button#btnLivro7,
+.button#btnLivro8,
+.button#btnLivro9,
+.button#btnLivro10,
+.button#btnLivro11,
+.button#btnLivro12 {
+	-fx-background-color: transparent;
+}
+
+.button:pressed#btnLivro7,
+.button:pressed#btnLivro8,
+.button:pressed#btnLivro9,
+.button:pressed#btnLivro10,
+.button:pressed#btnLivro11,
+.button:pressed#btnLivro12 {
+	-fx-border-color: transparent;
+	-fx-border-width: 0.15em;
+}
+
+.button:hover#btnLivro7,
+.button:hover#btnLivro8,
+.button:hover#btnLivro9,
+.button:hover#btnLivro10,
+.button:hover#btnLivro11,
+.button:hover#btnLivro12 {
+	-fx-opacity: 80%;
+}
+
+.button#btnLivro13,
+.button#btnLivro14,
+.button#btnLivro15,
+.button#btnLivro16,
+.button#btnLivro17,
+.button#btnLivro18 {
+	-fx-background-color: transparent;
+}
+
+.button:pressed#btnLivro13,
+.button:pressed#btnLivro14,
+.button:pressed#btnLivro15,
+.button:pressed#btnLivro16,
+.button:pressed#btnLivro17,
+.button:pressed#btnLivro18 {
+	-fx-border-color: transparent;
+	-fx-border-width: 0.15em;
+}
+
+.button:hover#btnLivro13,
+.button:hover#btnLivro14,
+.button:hover#btnLivro15,
+.button:hover#btnLivro16,
+.button:hover#btnLivro17,
+.button:hover#btnLivro18 {
+	-fx-opacity: 80%;
+}

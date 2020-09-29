@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLInicioController">
+   <children>
+      <ImageView fx:id="imgFundo" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/TCC/FundoOpaco.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblSair" layoutX="1231.0" layoutY="10.0" onMouseClicked="#sair" prefHeight="51.0" prefWidth="25.0" text="X" />
+      <Label fx:id="lblTitulo" layoutX="165.0" layoutY="15.0" prefHeight="83.0" prefWidth="832.0" text="Biblioteca Bookworm" />
+      <ImageView fx:id="imgLogo" fitHeight="105.0" fitWidth="114.0" layoutX="1018.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/TCC/agenda.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgPainel" fitHeight="562.0" fitWidth="1196.0" layoutX="35.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/TCC/Rectangle%203.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtPesquisa" layoutX="107.0" layoutY="143.0" prefHeight="51.0" prefWidth="1094.0" promptText="Pesquise por título, gênero, autor ou editora" />
+      <Button fx:id="btnPesquisar" layoutX="1145.0" layoutY="143.0" minWidth="46.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="56.0">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/TCC/icoPesquisa.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ScrollPane layoutX="40.0" layoutY="216.0" prefHeight="470.0" prefWidth="1170.0">
+         <content>
+            <AnchorPane opacity="0.94" prefHeight="700.0" prefWidth="1158.0">
+               <children>
+                  <Label fx:id="lbl" layoutX="45.0" layoutY="14.0" prefHeight="18.0" prefWidth="211.0" text="Mais pesquisados" />
+                  <Label fx:id="lbl" layoutX="45.0" layoutY="240.0" text="Adicionados Recentemente" />
+                  <Button fx:id="btnAnterior" layoutX="35.0" layoutY="110.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="54.0">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/icBack.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLivro1" layoutX="140.0" layoutY="64.0" mnemonicParsing="false" onAction="#ChangeScene" prefHeight="128.0" prefWidth="95.0">
+                     <graphic>
+                        <ImageView fitHeight="137.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/oIluminado.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLivro2" layoutX="322.0" layoutY="64.0" mnemonicParsing="false" onAction="#FilmeScene" prefHeight="128.0" prefWidth="95.0">
+                     <graphic>
+                        <ImageView fitHeight="137.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/emoji.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLivro3" layoutX="490.0" layoutY="64.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="95.0">
+                     <graphic>
+                        <ImageView fitHeight="145.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/neverland%201.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLivro4" layoutX="646.0" layoutY="64.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="95.0">
+                     <graphic>
+                        <ImageView fitHeight="137.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/rezero.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLivro5" layoutX="787.0" layoutY="64.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="95.0">
+                     <graphic>
+                        <ImageView fitHeight="154.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/disco.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLivro6" layoutX="936.0" layoutY="64.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="95.0">
+                     <graphic>
+                        <ImageView fitHeight="137.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/death%20note%202%201.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnProximo" layoutX="1071.0" layoutY="119.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="54.0">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/icNext.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnAnterior" layoutX="35.0" layoutY="322.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="54.0">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/icBack.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLivro7" layoutX="140.0" layoutY="280.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="95.0">
+                     <graphic>
+                        <ImageView fitHeight="137.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/senhorDosAneis.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLivro8" layoutX="322.0" layoutY="280.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="95.0">
+                     <graphic>
+                        <ImageView fitHeight="137.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/tcc8878%201.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLivro9" layoutX="490.0" layoutY="280.0" mnemonicParsing="false" onAction="#Livro3Scene" prefHeight="128.0" prefWidth="95.0">
+                     <graphic>
+                        <ImageView fitHeight="137.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/elaEOSeuGato.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLivro10" layoutX="646.0" layoutY="280.0" mnemonicParsing="false" onAction="#RevistaScene" prefHeight="128.0" prefWidth="95.0">
+                     <graphic>
+                        <ImageView fitHeight="137.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/ALendaZelda.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLivro11" layoutX="800.0" layoutY="280.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="95.0">
+                     <graphic>
+                        <ImageView fitHeight="137.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/littleWitchAcademia.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLivro12" layoutX="936.0" layoutY="280.0" mnemonicParsing="false" onAction="#Livro2Scene" prefHeight="128.0" prefWidth="95.0">
+                     <graphic>
+                        <ImageView fitHeight="137.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/DestinosFurias.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnProximo" layoutX="1071.0" layoutY="322.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="54.0">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/icNext.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnAnterior" layoutX="35.0" layoutY="534.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="54.0">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/icBack.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label fx:id="lbl" layoutX="45.0" layoutY="466.0" prefHeight="18.0" prefWidth="175.0" text="CDs" />
+                  <Button fx:id="btnLivro13" layoutX="125.0" layoutY="496.0" mnemonicParsing="false" onAction="#CDScene" prefHeight="121.0" prefWidth="133.0">
+                     <graphic>
+                        <ImageView fitHeight="121.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/Aerosmith.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLivro14" layoutX="303.0" layoutY="504.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="133.0">
+                     <graphic>
+                        <ImageView fitHeight="121.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/nacaoZumbi.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLivro15" layoutX="490.0" layoutY="496.0" mnemonicParsing="false" prefHeight="121.0" prefWidth="133.0">
+                     <graphic>
+                        <ImageView fitHeight="121.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/fredericc.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLivro16" layoutX="667.0" layoutY="496.0" mnemonicParsing="false" prefHeight="121.0" prefWidth="133.0">
+                     <graphic>
+                        <ImageView fitHeight="121.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/pentagonDois.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLivro17" layoutX="870.0" layoutY="496.0" mnemonicParsing="false" prefHeight="121.0" prefWidth="133.0">
+                     <graphic>
+                        <ImageView fitHeight="121.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/voSavio.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnProximo" layoutX="1071.0" layoutY="534.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="54.0">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/TCC/icNext.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
