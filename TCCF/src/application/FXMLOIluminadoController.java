@@ -9,7 +9,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
@@ -31,9 +30,6 @@ public class FXMLOIluminadoController implements Initializable{
 	 private Text lblSinopse;
 	 
 	 produto produtoAtual;
-	 
-	 @FXML
-	 private ScrollPane scrMenor;
 	 
 	 @FXML
 	 protected void sair() {

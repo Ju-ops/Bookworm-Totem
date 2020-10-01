@@ -110,7 +110,7 @@
                      <graphic>
                         <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/TCC/icNext.png" />
+                              <Image url="@../imgs/icNext.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -124,11 +124,11 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btnLivro7" layoutX="140.0" layoutY="280.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="95.0">
+                  <Button fx:id="btnLivro7" layoutX="140.0" layoutY="280.0" mnemonicParsing="false" onAction="#Livro5Scene" prefHeight="128.0" prefWidth="95.0">
                      <graphic>
                         <ImageView fitHeight="137.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../imgs/senhorDosAneis.jpg" />
+                              <Image url="@../imgs/senhorDosAneis1.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -182,7 +182,7 @@
                      <graphic>
                         <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/TCC/icNext.png" />
+                              <Image url="@../imgs/icNext.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -246,7 +246,7 @@
                      <graphic>
                         <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/TCC/icNext.png" />
+                              <Image url="@../imgs/icNext.png" />
                            </image>
                         </ImageView>
                      </graphic>
