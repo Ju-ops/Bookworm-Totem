@@ -33,7 +33,7 @@
          <graphic>
             <ImageView fitHeight="46.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Desktop/TCC/icoVoltar.png" />
+                  <Image url="@../imgs/icoVoltar.png" />
                </image>
             </ImageView>
          </graphic>
@@ -42,7 +42,7 @@
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Desktop/TCC/icoPesquisa.png" />
+                  <Image url="@../imgs/icoPesquisa.png" />
                </image>
             </ImageView>
          </graphic>

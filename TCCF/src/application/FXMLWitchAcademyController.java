@@ -13,9 +13,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 
-public class FXMLEmojiController implements Initializable {
+public class FXMLWitchAcademyController implements Initializable{
 	@FXML
-    private ImageView imgFundo, imgLogo, imgPainel, imgCD;
+    private ImageView imgFundo, imgLogo, imgPainel, imgRevista;
 
     @FXML
     private Label lblTitulo, lblSair, lblLocal, lblTituloL, lblDiretor, lblGenero, lblAno, lblDisponiveis;
@@ -32,31 +32,30 @@ public class FXMLEmojiController implements Initializable {
     produto produtoAtual;
     
     @FXML
-	 protected void sair() {
-		 System.exit(0);
-	 }
+	protected void sair() {
+		System.exit(0);
+	}
 	 
-	 @FXML
-	 protected void InicioScene(ActionEvent e) {
+	@FXML
+	protected void InicioScene(ActionEvent e) {
 		MainInicio.changeScreen("inicio");
-	 }
+	}
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		try {
-			produtoAtual = produto.getProduto(6);
+			produtoAtual = produto.getProduto(8);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		lblTituloL.setText(produtoAtual.getFileira() + "");
 		lblLocal.setText("Setor:  " + produtoAtual.getSetor() + "      Fileira:  " + produtoAtual.getFileira() + "     Preteleira:  " + produtoAtual.getPrateleira());
 		lblTituloL.setText(produtoAtual.getNomeLivro());
 		lblDiretor.setText(produtoAtual.getAutoresLivro());
 		lblGenero.setText(null);
-		lblSinopse.setText(produtoAtual.getDescricaoProd());
 		lblAno.setText("Editora: " + produtoAtual.getEditora() + "            Ano Edição: " + produtoAtual.getAnoEdicao() + "");
 		lblDisponiveis.setText("Exemplares disponíveis:  " + produtoAtual.getDisponiveis());
+		lblSinopse.setText(produtoAtual.getDescricaoProd());
 		
 	}
 

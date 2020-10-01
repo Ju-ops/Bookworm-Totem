@@ -32,7 +32,7 @@
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Desktop/TCC/icoPesquisa.png" />
+                  <Image url="@../imgs/icoPesquisa.png" />
                </image>
             </ImageView>
          </graphic>
@@ -128,7 +128,7 @@
                      <graphic>
                         <ImageView fitHeight="137.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/TCC/senhorDosAneis.jpg" />
+                              <Image url="@../imgs/senhorDosAneis.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -146,7 +146,7 @@
                      <graphic>
                         <ImageView fitHeight="137.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/TCC/elaEOSeuGato.jpg" />
+                              <Image url="@../imgs/elaEOSeuGato.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -155,16 +155,16 @@
                      <graphic>
                         <ImageView fitHeight="137.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/TCC/ALendaZelda.jpg" />
+                              <Image url="@../imgs/ALendaZelda.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btnLivro11" layoutX="800.0" layoutY="280.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="95.0">
+                  <Button fx:id="btnLivro11" layoutX="800.0" layoutY="280.0" mnemonicParsing="false" onAction="#Livro4Scene" prefHeight="128.0" prefWidth="95.0">
                      <graphic>
                         <ImageView fitHeight="137.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/TCC/littleWitchAcademia.jpg" />
+                              <Image url="@../imgs/littleWitchAcademia.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -173,7 +173,7 @@
                      <graphic>
                         <ImageView fitHeight="137.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/TCC/DestinosFurias.jpg" />
+                              <Image url="@../imgs/DestinosFurias.jpg" />
                            </image>
                         </ImageView>
                      </graphic>

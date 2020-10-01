@@ -19,6 +19,7 @@ public class MainInicio extends Application {
 	private static Scene zelda;
 	private static Scene destinos;
 	private static Scene elaeseugato;
+	private static Scene witchAcademy;
 	
 	@Override
 	public void start(Stage primaryStage) throws IOException {
@@ -52,6 +53,10 @@ public class MainInicio extends Application {
 		elaeseugato = new Scene(fxmlLivro3);
 		elaeseugato.getStylesheets().add("CSS/application.css");
 		
+		Parent fxmlLivro4 = FXMLLoader.load(getClass().getResource("../application/FXMLWitchAcademy.fxml"));
+		witchAcademy = new Scene(fxmlLivro4);
+		witchAcademy.getStylesheets().add("CSS/application.css");
+		
 		primaryStage.initStyle(StageStyle.UNDECORATED);
 		primaryStage.setScene(inicioScene);
 		primaryStage.show();
@@ -79,6 +84,9 @@ public class MainInicio extends Application {
 				break;
 			case "elaeseugato":
 				stage.setScene(elaeseugato);
+				break;
+			case "witchAcademy":
+				stage.setScene(witchAcademy);
 				break;
 		}
 	}

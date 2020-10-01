@@ -13,18 +13,18 @@
    <children>
       <ImageView fx:id="imgFundo" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Desktop/TCC/FundoOpaco.png" />
+            <Image url="@../imgs/FundoOpaco.png" />
          </image>
       </ImageView>
       <Label fx:id="lblTitulo" layoutX="165.0" layoutY="15.0" prefHeight="83.0" prefWidth="832.0" text="Biblioteca Bookworm" />
       <ImageView fx:id="imgLogo" fitHeight="105.0" fitWidth="144.0" layoutX="1018.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Desktop/TCC/agenda.png" />
+            <Image url="@../imgs/agenda.png" />
          </image>
       </ImageView>
       <ImageView fx:id="imgPainel" fitHeight="562.0" fitWidth="1196.0" layoutX="35.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Desktop/TCC/Rectangle%203.png" />
+            <Image url="@../imgs/Rectangle%203.png" />
          </image>
       </ImageView>
       <Label fx:id="lblSair" layoutX="1231.0" layoutY="10.0" onMouseClicked="#sair" prefHeight="51.0" prefWidth="25.0" text="X" />
@@ -33,7 +33,7 @@
          <graphic>
             <ImageView fitHeight="46.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Desktop/TCC/icoVoltar.png" />
+                  <Image url="@../imgs/icoVoltar.png" />
                </image>
             </ImageView>
          </graphic>
@@ -42,7 +42,7 @@
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Desktop/TCC/icoPesquisa.png" />
+                  <Image url="@../imgs/icoPesquisa.png" />
                </image>
             </ImageView>
          </graphic>
@@ -50,7 +50,7 @@
       <Label fx:id="lblLocal" layoutX="112.0" layoutY="228.0" prefHeight="35.0" prefWidth="500.0" text="Label" />
       <ImageView fx:id="imgLivro" fitHeight="334.0" fitWidth="267.0" layoutX="101.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Desktop/TCC/Destinos.jpg" />
+            <Image url="@../imgs/DestinosFurias.jpg" />
          </image>
       </ImageView>
       <Label fx:id="lblTituloL" layoutX="396.0" layoutY="302.0" prefHeight="20.0" prefWidth="742.0" text="Label" />

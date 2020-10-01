@@ -58,6 +58,11 @@ public class FXMLInicioController implements Initializable {
     protected void Livro3Scene(ActionEvent e) {
 		MainInicio.changeScreen("elaeseugato");
 	}
+    
+    @FXML
+    protected void Livro4Scene(ActionEvent e) {
+		MainInicio.changeScreen("witchAcademy");
+	}
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
