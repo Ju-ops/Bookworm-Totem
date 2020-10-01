@@ -1,7 +1,7 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
 /*fx:controller="application.FXMLFilmeController" #19323C styleClass="text-text"*/
 
-.text-field {
+.text-field#txtPesquisa {
 	-fx-background-color: #AABBCC;
 	-fx-text-fill: #191919;
 	-fx-prompt-text-fill: #191919;
