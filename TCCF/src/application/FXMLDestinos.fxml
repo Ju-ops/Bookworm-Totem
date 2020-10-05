@@ -60,7 +60,7 @@
       <Label fx:id="lblDisponiveis" layoutX="108.0" layoutY="632.0" prefHeight="20.0" prefWidth="400.0" text="Label" />
       <ScrollPane layoutX="397.0" layoutY="422.0" prefHeight="145.0" prefWidth="814.0">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="335.0" prefWidth="786.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="312.0" prefWidth="786.0">
                <children>
                   <Text fx:id="lblSinopse" fill="#fcfcfc" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-text" text="Text" wrappingWidth="786.0" />
                </children>
