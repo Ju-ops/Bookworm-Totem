@@ -206,11 +206,11 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btnLivro14" layoutX="303.0" layoutY="504.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="133.0">
+                  <Button fx:id="btnLivro14" layoutX="303.0" layoutY="504.0" mnemonicParsing="false" onAction="#Livro6Scene" prefHeight="105.0" prefWidth="133.0">
                      <graphic>
                         <ImageView fitHeight="121.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/TCC/nacaoZumbi.jpg" />
+                              <Image url="@../imgs/anjos.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
