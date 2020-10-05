@@ -16,14 +16,14 @@
             <Image url="@../imgs/FundoOpaco.png" />
          </image>
       </ImageView>
-      <Label fx:id="lblTitulo" layoutX="165.0" layoutY="15.0" prefHeight="83.0" prefWidth="832.0" text="Biblioteca Bokkworm" />
+      <Label fx:id="lblTitulo" layoutX="165.0" layoutY="15.0" prefHeight="83.0" prefWidth="832.0" text="Biblioteca Bookworm" />
       <Label fx:id="lblSair" layoutX="1231.0" layoutY="10.0" onMouseClicked="#sair" prefHeight="51.0" prefWidth="25.0" text="X" />
-      <ImageView fx:id="imgLogo" fitHeight="105.0" fitWidth="144.0" layoutX="1018.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgLogo" fitHeight="105.0" fitWidth="114.0" layoutX="1018.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imgs/agenda.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="imgPainel" fitHeight="562.0" fitWidth="1196.0" layoutX="42.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgPainel" fitHeight="562.0" fitWidth="1196.0" layoutX="35.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imgs/Rectangle%203.png" />
          </image>
