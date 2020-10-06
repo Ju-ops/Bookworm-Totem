@@ -88,11 +88,11 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btnLivro5" layoutX="787.0" layoutY="64.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="95.0">
+                  <Button fx:id="btnLivro5" layoutX="776.0" layoutY="67.0" mnemonicParsing="false" onAction="#Livro7Scene" prefHeight="122.0" prefWidth="133.0">
                      <graphic>
-                        <ImageView fitHeight="154.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="123.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/TCC/disco.jpg" />
+                              <Image url="@../imgs/teste1.jpg" />
                            </image>
                         </ImageView>
                      </graphic>

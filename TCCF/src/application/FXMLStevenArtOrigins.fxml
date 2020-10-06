@@ -6,9 +6,9 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="application.FXMLStevenArtOriginsController">
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLStevenArtOriginsController">
    <children>
       <ImageView fx:id="imgFundo" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -28,7 +28,7 @@
       </ImageView>
       <Label fx:id="lblSair" layoutX="1231.0" layoutY="10.0" onMouseClicked="#sair" prefHeight="51.0" prefWidth="25.0" text="X" />
       <TextField fx:id="txtPesquisa" layoutX="107.0" layoutY="143.0" prefHeight="51.0" prefWidth="1094.0" promptText="Pesquise por título, gênero, autor ou editora" />
-      <Button fx:id="btnVoltar" layoutX="48.0" layoutY="147.0" mnemonicParsing="false">
+      <Button fx:id="btnVoltar" layoutX="48.0" layoutY="147.0" mnemonicParsing="false" onAction="#InicioScene">
          <graphic>
             <ImageView fitHeight="46.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -46,12 +46,16 @@
             </ImageView>
          </graphic>
       </Button>
-      <Label layoutX="109.0" layoutY="231.0" text="Label" />
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true" />
-      <Label layoutX="412.0" layoutY="255.0" text="Label" />
-      <Label layoutX="412.0" layoutY="296.0" text="Label" />
-      <Label layoutX="412.0" layoutY="343.0" text="Label" />
-      <Label layoutX="419.0" layoutY="542.0" text="Label" />
-      <Label layoutX="95.0" layoutY="616.0" text="Label" />
+      <Label fx:id="lblLocal" layoutX="112.0" layoutY="228.0" prefHeight="35.0" prefWidth="500.0" text="Label" />
+      <ImageView fx:id="imgLivro" fitHeight="249.0" fitWidth="290.0" layoutX="100.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/teste1.jpg" />
+         </image></ImageView>
+      <Label fx:id="lblTituloL" layoutX="396.0" layoutY="302.0" prefHeight="20.0" prefWidth="500.0" text="Label" />
+      <Label fx:id="lblAutor" layoutX="396.0" layoutY="342.0" prefHeight="20.0" prefWidth="500.0" text="Label" />
+      <Label fx:id="lblGenero" layoutX="396.0" layoutY="382.0" prefHeight="20.0" prefWidth="500.0" text="Label" />
+      <Label fx:id="lblAno" layoutX="396.0" layoutY="580.0" prefHeight="20.0" prefWidth="500.0" text="Label" />
+      <Label fx:id="lblDisponiveis" layoutX="108.0" layoutY="632.0" prefHeight="20.0" prefWidth="300.0" text="Label" />
+      <Text fx:id="lblSinopse" fill="#fcfcfc" layoutX="397.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-text" text="Text" wrappingWidth="776.0" />
    </children>
 </AnchorPane>
