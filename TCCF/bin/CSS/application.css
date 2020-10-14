@@ -12,7 +12,7 @@
 
 .label {
 	-fx-text-fill: #19323C;
-	-fx-font-size: 83px;
+	-fx-font-size: 87px;
 	-fx-font-family: "Comic Sans MS";
 }
 
@@ -28,7 +28,7 @@
 
 .text-text {
 	-fx-text-fill: #19323c;
-	-fx-font-size: 25px;
+	-fx-font-size: 30px;
 	-fx-font-family: "Comic Sans MS";
 }
 
@@ -110,47 +110,47 @@
 
 .label#lblLocal {
 	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 20px;
+	-fx-font-size: 40px;
 }
 
 .label#lblTituloL {
 	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 20px;
+	-fx-font-size: 35px;
 }
 
 .label#lblAutor {
 	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 20px;
+	-fx-font-size: 33px;
 }
 
 .label#lblGenero {
 	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 20px;
+	-fx-font-size: 33px;
 }
 
 .label#lblDisponiveis {
 	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 20px;
+	-fx-font-size: 28px;
 }
 
 .label#lblAno {
 	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 20px;
+	-fx-font-size: 33px;
 }
 
 .label#lblDiretor {
 	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 20px;
+	-fx-font-size: 33px;
 }
 
 .label#lblCompositor {
 	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 20px;
+	-fx-font-size: 33px;
 }
 
 .label#lbl {
 	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 20px;
+	-fx-font-size: 35px;
 }
 
 .label#lblSair {
@@ -165,7 +165,7 @@
 
 .text-text#lblSinopse {
 	-fx-font-family: "Comic Sans MS";
-	-fx-font-size: 15px;
+	-fx-font-size: 29px;
 }
 
 /* IDs Buttons  */
