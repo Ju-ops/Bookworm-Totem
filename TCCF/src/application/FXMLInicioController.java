@@ -3,9 +3,11 @@ package application;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import ClasseConexao.pesquisa;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -23,6 +25,8 @@ public class FXMLInicioController implements Initializable {
 
     @FXML
     private Button btnPesquisar, btnAnterior, btnProximo, btnLivro1, btnLivro2, btnLivro3, btnLivro4, btnLivro5, btnLivro6, btnLivro7, btnLivro8, btnLivro9, btnLivro10, btnLivro11, btnLivro12, btnLivro13, btnLivro14, btnLivro15, btnLivro16, btnLivro17, btnLivro18;
+
+    pesquisa pesquisaAtual;
     
     @FXML
     void sair() {
@@ -77,6 +81,20 @@ public class FXMLInicioController implements Initializable {
     @FXML
     protected void Livro7Scene(ActionEvent e) {
 		MainInicio.changeScreen("stevenArtOrigins");
+	}
+    
+    @FXML
+    protected void Pesquisar(ActionEvent e) throws Exception {
+    	pesquisaAtual = pesquisa.getPesquisa(txtPesquisa.getText());
+    	if (pesquisaAtual == null) {
+            MainInicio.changeScreen("pesquisaErro");
+    	} else {
+    		Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
+        	dialogoInfo.setTitle("Diálogo de informação");
+            dialogoInfo.setHeaderText(pesquisaAtual.getAutoresLivro());
+            dialogoInfo.setContentText("Informação importante!");
+            dialogoInfo.showAndWait();
+    	}
 	}
 
 	@Override

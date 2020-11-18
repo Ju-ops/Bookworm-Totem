@@ -28,7 +28,7 @@
          </image>
       </ImageView>
       <TextField fx:id="txtPesquisa" layoutX="119.0" layoutY="143.0" prefHeight="60.0" prefWidth="1094.0" promptText="Pesquise por título, gênero, autor ou editora" />
-      <Button fx:id="btnPesquisar" layoutX="1145.0" layoutY="143.0" minWidth="46.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="56.0">
+      <Button fx:id="btnPesquisar" layoutX="1145.0" layoutY="143.0" minWidth="46.0" mnemonicParsing="false" onAction="#Pesquisar" prefHeight="51.0" prefWidth="56.0">
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
