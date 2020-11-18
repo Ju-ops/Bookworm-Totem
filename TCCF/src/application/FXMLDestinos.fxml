@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLDestinosController">
+<AnchorPane prefHeight="996.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLDestinosController">
    <children>
-      <ImageView fx:id="imgFundo" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgFundo" fitHeight="996.0" fitWidth="1148.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../imgs/FundoOpaco.png" />
+            <Image url="@../imgs/FundoOpaco2.jpg" />
          </image>
       </ImageView>
       <Label fx:id="lblTitulo" layoutX="165.0" layoutY="15.0" prefHeight="83.0" prefWidth="832.0" text="Biblioteca Bookworm" />

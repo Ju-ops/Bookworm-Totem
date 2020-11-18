@@ -16,7 +16,7 @@
          </image>
       </ImageView>
       <Label fx:id="lblSair" layoutX="1231.0" layoutY="10.0" onMouseClicked="#sair" prefHeight="51.0" prefWidth="25.0" text="X" />
-      <Label fx:id="lblTitulo" layoutX="86.0" layoutY="15.0" prefHeight="83.0" prefWidth="817.0" text="Biblioteca Bookworm" />
+      <Label fx:id="lblTitulo" layoutX="146.0" layoutY="36.0" prefHeight="87.0" prefWidth="817.0" text="Biblioteca Bookworm" />
       <ImageView fx:id="imgLogo" fitHeight="105.0" fitWidth="114.0" layoutX="1018.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imgs/agenda.png" />
@@ -27,7 +27,7 @@
             <Image url="@../imgs/Rectangle%203.png" />
          </image>
       </ImageView>
-      <TextField fx:id="txtPesquisa" layoutX="107.0" layoutY="143.0" prefHeight="51.0" prefWidth="1094.0" promptText="Pesquise por título, gênero, autor ou editora" />
+      <TextField fx:id="txtPesquisa" layoutX="119.0" layoutY="143.0" prefHeight="60.0" prefWidth="1094.0" promptText="Pesquise por título, gênero, autor ou editora" />
       <Button fx:id="btnPesquisar" layoutX="1145.0" layoutY="143.0" minWidth="46.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="56.0">
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
