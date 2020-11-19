@@ -26,7 +26,7 @@ public class FXMLPesquisaController implements Initializable {
     
     FXMLInicioController pesquisaAtual;
     
-    pesquisa pesquisaP;
+    String pesquisaP = pesquisaAtual + "";
 
 	@FXML
     void Sair() {
@@ -40,17 +40,7 @@ public class FXMLPesquisaController implements Initializable {
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		if (pesquisaAtual != null) {
-			try {
-				pesquisaP = pesquisa.getPesquisa(pesquisaAtual + "");
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-			lblAutor.setText(pesquisaP.getAutoresLivro());
-		} else {
-			//MainInicio.changeScreen("pesquisaErro");
-		}
-		
+		lblAutor.setText(pesquisaAtual.get);
 	}
 
 }
