@@ -15,7 +15,7 @@
             <Image url="@../imgs/FundoOpaco.png" />
          </image>
       </ImageView>
-      <Label fx:id="lblSair" layoutX="1231.0" layoutY="10.0" onMouseClicked="#sair" prefHeight="51.0" prefWidth="25.0" text="X" />
+      <Label fx:id="lblSair" layoutX="1231.0" layoutY="10.0" onMouseClicked="#Sair" prefHeight="51.0" prefWidth="25.0" text="X" />
       <Label fx:id="lblTitulo" layoutX="146.0" layoutY="36.0" prefHeight="87.0" prefWidth="817.0" text="Biblioteca Bookworm" />
       <ImageView fx:id="imgLogo" fitHeight="105.0" fitWidth="114.0" layoutX="1018.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
          <image>

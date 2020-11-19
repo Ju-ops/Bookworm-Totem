@@ -10,11 +10,10 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 
 
-public class MainPesquisa extends Application {
-	
+public class MainPesquisaErro extends Application {
 	@Override
 	public void start(Stage primaryStage) throws IOException {
-		Pane root = FXMLLoader.load(getClass().getResource("FXMLPesquisa.fxml"));
+		Pane root = FXMLLoader.load(getClass().getResource("FXMLPesquisaErro.fxml"));
 		
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add("CSS/application.css");

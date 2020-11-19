@@ -7,7 +7,6 @@ import ClasseConexao.pesquisa;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -29,7 +28,7 @@ public class FXMLInicioController implements Initializable {
     pesquisa pesquisaAtual;
     
     @FXML
-    void sair() {
+    void Sair() {
     	System.exit(0);
     }
     
@@ -89,11 +88,7 @@ public class FXMLInicioController implements Initializable {
     	if (pesquisaAtual == null) {
             MainInicio.changeScreen("pesquisaErro");
     	} else {
-    		Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
-        	dialogoInfo.setTitle("Diálogo de informação");
-            dialogoInfo.setHeaderText(pesquisaAtual.getAutoresLivro());
-            dialogoInfo.setContentText("Informação importante!");
-            dialogoInfo.showAndWait();
+    		MainInicio.changeScreen("pesquisa");
     	}
 	}
 

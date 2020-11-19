@@ -168,6 +168,11 @@
 	-fx-font-size: 29px;
 }
 
+.text-text2#lblAviso {
+	-fx-font-family: "Comic Sans MS";
+	-fx-font-size: 45px;
+}
+
 /* IDs Buttons  */
 
 .button#btnPesquisar,
