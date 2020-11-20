@@ -34,7 +34,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="btnPesquisar" layoutX="1140.0" layoutY="149.0" mnemonicParsing="false">
+      <Button fx:id="btnPesquisar" layoutX="1140.0" layoutY="149.0" mnemonicParsing="false" onAction="#Pesquisar">
          <graphic>
             <ImageView fitHeight="40.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
                <image>

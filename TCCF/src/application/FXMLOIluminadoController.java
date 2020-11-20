@@ -3,6 +3,7 @@ package application;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import ClasseConexao.pesquisa;
 import ClasseConexao.produto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -35,8 +36,10 @@ public class FXMLOIluminadoController implements Initializable{
 	 
 	 produto produtoAtual;
 	 
+	 pesquisa pesquisaAtual;
+	 
 	 @FXML
-	 protected void sair() {
+	 protected void Sair() {
 		 System.exit(0);
 	 }
 	 
@@ -45,8 +48,13 @@ public class FXMLOIluminadoController implements Initializable{
 		MainInicio.changeScreen("inicio");
 	 }
 	 
-	 public void Pesquisar(ActionEvent e) {
-		 
+	 public void Pesquisar(ActionEvent e) throws Exception {
+		 pesquisaAtual = pesquisa.getPesquisa(txtPesquisa.getText());
+	     if (pesquisaAtual == null) {
+	    	MainInicio.changeScreen("pesquisaErro");
+	     } else {
+	    	MainInicio.changeScreen("pesquisa");
+	     }
 	 }
 
 	@Override

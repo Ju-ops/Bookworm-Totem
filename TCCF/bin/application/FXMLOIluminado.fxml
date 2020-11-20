@@ -18,7 +18,7 @@
          </image>
       </ImageView>
       <Label fx:id="lblTitulo" layoutX="165.0" layoutY="15.0" prefHeight="83.0" prefWidth="832.0" text="Biblioteca Bookworm" />
-      <Label fx:id="lblSair" layoutX="1231.0" layoutY="10.0" onMouseClicked="#sair" prefHeight="51.0" prefWidth="25.0" text="X" />
+      <Label fx:id="lblSair" layoutX="1231.0" layoutY="10.0" onMouseClicked="#Sair" prefHeight="51.0" prefWidth="25.0" text="X" />
       <ImageView fx:id="imgLogo" fitHeight="105.0" fitWidth="114.0" layoutX="1018.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imgs/agenda.png" />
@@ -35,7 +35,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="btnPesquisar" layoutX="1149.0" layoutY="147.0" mnemonicParsing="false">
+      <Button fx:id="btnPesquisar" layoutX="1149.0" layoutY="147.0" mnemonicParsing="false" onAction="#Pesquisar">
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>

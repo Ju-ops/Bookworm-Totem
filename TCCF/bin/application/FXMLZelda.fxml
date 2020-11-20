@@ -22,7 +22,7 @@
             <Image url="@../imgs/agenda.png" />
          </image>
       </ImageView>
-      <Label fx:id="lblSair" layoutX="1231.0" layoutY="10.0" onMouseClicked="#sair" prefHeight="51.0" prefWidth="25.0" text="X" />
+      <Label fx:id="lblSair" layoutX="1231.0" layoutY="10.0" onMouseClicked="#Sair" prefHeight="51.0" prefWidth="25.0" text="X" />
       <Rectangle fx:id="rtgPainel" arcHeight="15.0" arcWidth="15.0" fill="#19323cf2" height="562.0" layoutX="35.0" layoutY="128.0" stroke="#1a313b00" strokeDashOffset="10.0" strokeType="INSIDE" strokeWidth="5.0" width="1196.0" />
       <TextField fx:id="txtPesquisa" layoutX="107.0" layoutY="143.0" prefHeight="51.0" prefWidth="1094.0" promptText="Pesquise por título, gênero, autor ou editora" />
       <Button fx:id="btnVoltar" layoutX="48.0" layoutY="147.0" mnemonicParsing="false" onAction="#InicioScene">
@@ -34,7 +34,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="btnPesquisar" layoutX="1149.0" layoutY="147.0" mnemonicParsing="false">
+      <Button fx:id="btnPesquisar" layoutX="1149.0" layoutY="147.0" mnemonicParsing="false" onAction="#Pesquisar">
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>

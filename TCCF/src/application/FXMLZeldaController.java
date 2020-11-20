@@ -3,6 +3,7 @@ package application;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import ClasseConexao.pesquisa;
 import ClasseConexao.produto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -34,15 +35,27 @@ public class FXMLZeldaController implements Initializable{
     private Rectangle rtgPainel;
     
     produto produtoAtual;
+    
+    pesquisa pesquisaAtual;
 
     @FXML
-	protected void sair() {
+	protected void Sair() {
 		System.exit(0);
 	}
 	 
 	@FXML
 	protected void InicioScene(ActionEvent e) {
 		MainInicio.changeScreen("inicio");
+	}
+	
+	@FXML
+	protected void Pesquisar() throws Exception {
+		pesquisaAtual = pesquisa.getPesquisa(txtPesquisa.getText());
+		 if (pesquisaAtual == null) {
+			 MainInicio.changeScreen("pesquisaErro");
+		 } else {
+			 MainInicio.changeScreen("pesquisa");
+		 }
 	}
 	 
 	@Override

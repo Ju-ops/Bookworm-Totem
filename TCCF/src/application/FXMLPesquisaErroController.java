@@ -3,6 +3,8 @@ package application;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import ClasseConexao.pesquisa;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -31,6 +33,8 @@ public class FXMLPesquisaErroController implements Initializable{
     @FXML
     private Rectangle rtgPainel;
     
+    pesquisa pesquisaAtual;
+    
 	@FXML
 	protected void Sair() {
 		System.exit(0);
@@ -39,6 +43,16 @@ public class FXMLPesquisaErroController implements Initializable{
 	@FXML
 	protected void Voltar() {
 		MainInicio.changeScreen("inicio");
+	}
+	
+	@FXML
+	protected void Pesquisar(ActionEvent e) throws Exception {
+		pesquisaAtual = pesquisa.getPesquisa(txtPesquisa.getText());
+    	if (pesquisaAtual == null) {
+    		MainInicio.changeScreen("pesquisaErro");
+    	} else {
+    		MainInicio.changeScreen("pesquisa");
+    	}
 	}
 
 	@Override
