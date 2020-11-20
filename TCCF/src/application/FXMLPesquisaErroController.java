@@ -9,11 +9,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 
 public class FXMLPesquisaErroController implements Initializable{
 	@FXML
-    private ImageView imgFundo, imgLogo, imgPainel;
+    private ImageView imgFundo, imgLogo;
 
     @FXML
     private Label lblTitulo, lblSair;
@@ -27,7 +28,9 @@ public class FXMLPesquisaErroController implements Initializable{
     @FXML
     private Text lblAviso;
 
-	
+    @FXML
+    private Rectangle rtgPainel;
+    
 	@FXML
 	protected void Sair() {
 		System.exit(0);

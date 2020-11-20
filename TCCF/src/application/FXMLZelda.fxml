@@ -6,6 +6,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLZeldaController">
@@ -21,12 +22,8 @@
             <Image url="@../imgs/agenda.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="imgPainel" fitHeight="562.0" fitWidth="1196.0" layoutX="35.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../imgs/Rectangle%203.png" />
-         </image>
-      </ImageView>
       <Label fx:id="lblSair" layoutX="1231.0" layoutY="10.0" onMouseClicked="#sair" prefHeight="51.0" prefWidth="25.0" text="X" />
+      <Rectangle fx:id="rtgPainel" arcHeight="15.0" arcWidth="15.0" fill="#19323cf2" height="562.0" layoutX="35.0" layoutY="128.0" stroke="#1a313b00" strokeDashOffset="10.0" strokeType="INSIDE" strokeWidth="5.0" width="1196.0" />
       <TextField fx:id="txtPesquisa" layoutX="107.0" layoutY="143.0" prefHeight="51.0" prefWidth="1094.0" promptText="Pesquise por título, gênero, autor ou editora" />
       <Button fx:id="btnVoltar" layoutX="48.0" layoutY="147.0" mnemonicParsing="false" onAction="#InicioScene">
          <graphic>

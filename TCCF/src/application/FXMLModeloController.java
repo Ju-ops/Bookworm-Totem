@@ -9,11 +9,12 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 
 public class FXMLModeloController implements Initializable{
 	@FXML
-    private ImageView imgFundo, imgLogo, imgPainel;
+    private ImageView imgFundo, imgLogo;
 
     @FXML
     private Label lblTitulo, lblSair, lblLocal, lblTituloL, lblAutor, lblGenero, lblAno, lblDisponiveis;
@@ -23,6 +24,9 @@ public class FXMLModeloController implements Initializable{
     
     @FXML
     private Text lblSinopse;
+    
+    @FXML
+    private Rectangle rtgPainel;
     
     produto produtoAtual;
     
