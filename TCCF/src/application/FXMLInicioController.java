@@ -17,7 +17,7 @@ public class FXMLInicioController implements Initializable {
     private ImageView imgFundo, imgPainel, imgLogo;
 
     @FXML
-    private Label lblTitulo, lbl, lblSair;
+    private Label lblTitulo, lbl, lblSair, lblTeste;
 
     @FXML
     private TextField txtPesquisa;
@@ -26,6 +26,8 @@ public class FXMLInicioController implements Initializable {
     private Button btnPesquisar, btnAnterior, btnProximo, btnLivro1, btnLivro2, btnLivro3, btnLivro4, btnLivro5, btnLivro6, btnLivro7, btnLivro8, btnLivro9, btnLivro10, btnLivro11, btnLivro12, btnLivro13, btnLivro14, btnLivro15, btnLivro16, btnLivro17, btnLivro18;
 
     pesquisa pesquisaAtual;
+    
+    FXMLPesquisaController lblAutor;
     
     @FXML
     void Sair() {
@@ -86,9 +88,10 @@ public class FXMLInicioController implements Initializable {
     protected void Pesquisar(ActionEvent e) throws Exception {
     	pesquisaAtual = pesquisa.getPesquisa(txtPesquisa.getText());
     	if (pesquisaAtual == null) {
-            MainInicio.changeScreen("pesquisaErro");
+    		MainInicio.changeScreen("pesquisaErro");
     	} else {
     		MainInicio.changeScreen("pesquisa");
+    		//lblAutor.setText(pesquisaAtual.getAutoresLivro());
     	}
 	}
 
