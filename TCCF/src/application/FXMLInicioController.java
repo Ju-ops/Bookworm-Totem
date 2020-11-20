@@ -11,13 +11,14 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.shape.Rectangle;
 
 public class FXMLInicioController implements Initializable {
 	@FXML
-    private ImageView imgFundo, imgPainel, imgLogo;
+    private ImageView imgFundo, imgLogo;
 
     @FXML
-    private Label lblTitulo, lbl, lblSair, lblTeste;
+    private Label lblTitulo, lbl, lblSair;
 
     @FXML
     private TextField txtPesquisa;
@@ -25,6 +26,9 @@ public class FXMLInicioController implements Initializable {
     @FXML
     private Button btnPesquisar, btnAnterior, btnProximo, btnLivro1, btnLivro2, btnLivro3, btnLivro4, btnLivro5, btnLivro6, btnLivro7, btnLivro8, btnLivro9, btnLivro10, btnLivro11, btnLivro12, btnLivro13, btnLivro14, btnLivro15, btnLivro16, btnLivro17, btnLivro18;
 
+    @FXML
+    private Rectangle rtgPainel;
+    
     pesquisa pesquisaAtual;
     
     FXMLPesquisaController lblAutor;
@@ -91,7 +95,6 @@ public class FXMLInicioController implements Initializable {
     		MainInicio.changeScreen("pesquisaErro");
     	} else {
     		MainInicio.changeScreen("pesquisa");
-    		//lblAutor.setText(pesquisaAtual.getAutoresLivro());
     	}
 	}
 

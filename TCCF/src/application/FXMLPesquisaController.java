@@ -9,10 +9,14 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.shape.Rectangle;
 
 public class FXMLPesquisaController implements Initializable {	
 	@FXML
-    private ImageView imgFundo, imgLogo, imgPainel;
+    private ImageView imgFundo, imgLogo;
+	
+	@FXML
+    private Rectangle rtgPainel;
 
     @FXML
     private Label lblSair, lblTitulo, lblAutor;

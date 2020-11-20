@@ -11,11 +11,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 
 public class FXMLDestinosController implements Initializable{
 	@FXML
-    private ImageView imgFundo, imgLogo, imgPainel, imgLivro;
+    private ImageView imgFundo, imgLogo, imgLivro;
 
     @FXML
     private Label lblTitulo, lblSair, lblLocal, lblTituloL, lblAutor, lblGenero, lblAno, lblDisponiveis;
@@ -28,6 +29,9 @@ public class FXMLDestinosController implements Initializable{
 
     @FXML
     private Text lblSinopse;
+    
+    @FXML
+    private Rectangle rtgPainel;
     
     produto produtoAtual;
     

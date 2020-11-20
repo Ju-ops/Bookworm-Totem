@@ -11,11 +11,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 
 public class FXMLAerosmithController implements Initializable{
 	@FXML
-    private ImageView imgFundo, imgLogo, imgPainel, imgCD;
+    private ImageView imgFundo, imgLogo, imgCD;
 
     @FXML
     private Label lblTitulo, lblLocal, lblSair, lblTituloL, lblCompositor, lblGenero, lblAno, lblDisponiveis;
@@ -28,6 +29,9 @@ public class FXMLAerosmithController implements Initializable{
 
     @FXML
     private Text lblSinopse;
+    
+    @FXML
+    private Rectangle rtgPainel;
     
     produto produtoAtual;
 
