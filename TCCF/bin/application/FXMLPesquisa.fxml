@@ -43,7 +43,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Label fx:id="lblAutor" layoutX="165.0" layoutY="268.0" text="Label" />
-      <ListView fx:id="lvResultado" layoutX="193.0" layoutY="294.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label fx:id="lblAutor" layoutX="165.0" layoutY="220.0" text="Label" />
+      <ListView fx:id="lvResultado" layoutX="165.0" layoutY="378.0" prefHeight="200.0" prefWidth="200.0" />
    </children>
 </AnchorPane>
