@@ -94,7 +94,9 @@ public class FXMLInicioController implements Initializable {
     	if (pesquisaAtual == null) {
     		MainInicio.changeScreen("pesquisaErro");
     	} else {
+    		String resultadoPesquisa = pesquisaAtual + "";
     		MainInicio.changeScreen("pesquisa");
+    		return resultadoPesquisa;
     	}
 	}
 
