@@ -96,7 +96,7 @@ public class FXMLInicioController implements Initializable {
     	} else {
     		String resultadoPesquisa = pesquisaAtual + "";
     		MainInicio.changeScreen("pesquisa");
-    		return resultadoPesquisa;
+    		//return resultadoPesquisa;
     	}
 	}
 
