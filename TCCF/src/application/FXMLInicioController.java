@@ -4,6 +4,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import ClasseConexao.pesquisa;
+import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -11,7 +12,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
+import javafx.util.Duration;
 
 public class FXMLInicioController implements Initializable {
 	@FXML
@@ -28,6 +31,9 @@ public class FXMLInicioController implements Initializable {
 
     @FXML
     private Rectangle rtgPainel;
+    
+    @FXML
+    private AnchorPane apScroll;
     
     pesquisa pesquisaAtual;
     
@@ -90,20 +96,32 @@ public class FXMLInicioController implements Initializable {
     
     @FXML
     protected void Pesquisar(ActionEvent e) throws Exception {
-    	pesquisaAtual = pesquisa.getPesquisa(txtPesquisa.getText());
+    	/*pesquisaAtual = pesquisa.getPesquisa(txtPesquisa.getText());
     	if (pesquisaAtual == null) {
     		MainInicio.changeScreen("pesquisaErro");
     	} else {
     		String resultadoPesquisa = pesquisaAtual + "";
     		MainInicio.changeScreen("pesquisa");
     		//return resultadoPesquisa;
-    	}
+    	}*/
 	}
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
 	}
+	
+	@FXML
+    void Ir(ActionEvent event) {
+		TranslateTransition translate = new TranslateTransition(Duration.seconds(1), btnLivro1);
+		translate.setToX(btnLivro1.getLayoutX() + btnLivro2.getLayoutX());
+		translate.play();
+    }
+
+    @FXML
+    void Voltar(ActionEvent event) {
+
+    }
 	
 	
 

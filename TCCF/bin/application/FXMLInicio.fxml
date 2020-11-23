@@ -36,11 +36,11 @@
       </Button>
       <ScrollPane layoutX="40.0" layoutY="216.0" prefHeight="470.0" prefWidth="1170.0">
          <content>
-            <AnchorPane opacity="0.94" prefHeight="700.0" prefWidth="1158.0">
+            <AnchorPane fx:id="apScroll" opacity="0.94" prefHeight="700.0" prefWidth="1158.0">
                <children>
                   <Label fx:id="lbl" layoutX="35.0" layoutY="5.0" prefHeight="38.0" prefWidth="325.0" text="Mais pesquisados" />
                   <Label fx:id="lbl" layoutX="35.0" layoutY="220.0" prefHeight="38.0" prefWidth="497.0" text="Adicionados Recentemente" />
-                  <Button fx:id="btnAnterior" layoutX="35.0" layoutY="110.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="54.0">
+                  <Button fx:id="btnAnterior" layoutX="35.0" layoutY="110.0" mnemonicParsing="false" onAction="#Voltar" prefHeight="51.0" prefWidth="54.0">
                      <graphic>
                         <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -103,7 +103,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btnProximo" layoutX="1071.0" layoutY="119.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="54.0">
+                  <Button fx:id="btnProximo" layoutX="1071.0" layoutY="119.0" mnemonicParsing="false" onAction="#Ir" prefHeight="51.0" prefWidth="54.0">
                      <graphic>
                         <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
                            <image>
