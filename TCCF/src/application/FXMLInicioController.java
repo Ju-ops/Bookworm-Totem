@@ -46,7 +46,7 @@ public class FXMLInicioController implements Initializable {
     
     pesquisa pesquisaAtual;
     
-    FXMLPesquisaController lblAutor;
+    FXMLInicioController nome = new FXMLInicioController();
     
     @FXML
     void Sair() {
@@ -104,16 +104,27 @@ public class FXMLInicioController implements Initializable {
 	}
     
     @FXML
+    public String Pesquisar() throws Exception {
+    	pesquisaAtual = pesquisa.getPesquisa(txtPesquisa.getText());
+    	if (pesquisaAtual == null) {
+    		MainInicio.changeScreen("pesquisaErro");
+    		return null;
+    	} else {
+    		MainInicio.changeScreen("pesquisa");
+    		String nome = txtPesquisa.getText();
+    		return nome;
+    	}
+    }
+    
+    /*@FXML
     protected void Pesquisar(ActionEvent e) throws Exception {
-    	/*pesquisaAtual = pesquisa.getPesquisa(txtPesquisa.getText());
+    	pesquisaAtual = pesquisa.getPesquisa(txtPesquisa.getText());
     	if (pesquisaAtual == null) {
     		MainInicio.changeScreen("pesquisaErro");
     	} else {
-    		String resultadoPesquisa = pesquisaAtual + "";
     		MainInicio.changeScreen("pesquisa");
-    		//return resultadoPesquisa;
-    	}*/
-	}
+    	}
+	}*/
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {

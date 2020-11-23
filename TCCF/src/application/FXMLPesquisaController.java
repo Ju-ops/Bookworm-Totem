@@ -31,7 +31,7 @@ public class FXMLPesquisaController implements Initializable {
     
     pesquisa pesquisaAtualpesquisa;
     
-    FXMLInicioController pesquisaAtual;
+    FXMLInicioController nome;
 
 	@FXML
     void Sair() {
@@ -55,7 +55,7 @@ public class FXMLPesquisaController implements Initializable {
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		//lblAutor.setText(pesquisaAtual.getAutoresLivro());
+		lblAutor.setText(nome + "");
 	}
 
 }
