@@ -275,3 +275,22 @@
 .button:hover#btnLivro18 {
 	-fx-opacity: 80%;
 }
+
+.button#btnLivroE,
+.button#btnLivroE2,
+.button#btnLivroE3 {
+	-fx-background-color: transparent;
+}
+
+.button:pressed#btnLivroE,
+.button:pressed#btnLivroE2,
+.button:pressed#btnLivroE3 {
+	-fx-border-color: transparent;
+	-fx-border-width: 0.15em;
+}
+
+.button:hover#btnLivroE,
+.button:hover#btnLivroE2,
+.button:hover#btnLivroE3 {
+	-fx-opacity: 80%;
+}
