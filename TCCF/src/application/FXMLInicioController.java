@@ -24,7 +24,7 @@ public class FXMLInicioController implements Initializable {
     private Label lblTitulo, lbl, lblSair;
 
     @FXML
-    private TextField txtPesquisa;
+    private TextField txtPesquisaP;
 
     @FXML
     private Button btnPesquisar, btnAnterior, btnProximo;
@@ -45,8 +45,6 @@ public class FXMLInicioController implements Initializable {
     private AnchorPane apScroll;
     
     pesquisa pesquisaAtual;
-    
-    FXMLInicioController nome = new FXMLInicioController();
     
     @FXML
     void Sair() {
@@ -104,27 +102,14 @@ public class FXMLInicioController implements Initializable {
 	}
     
     @FXML
-    public String Pesquisar() throws Exception {
-    	pesquisaAtual = pesquisa.getPesquisa(txtPesquisa.getText());
-    	if (pesquisaAtual == null) {
-    		MainInicio.changeScreen("pesquisaErro");
-    		return null;
-    	} else {
-    		MainInicio.changeScreen("pesquisa");
-    		String nome = txtPesquisa.getText();
-    		return nome;
-    	}
-    }
-    
-    /*@FXML
     protected void Pesquisar(ActionEvent e) throws Exception {
-    	pesquisaAtual = pesquisa.getPesquisa(txtPesquisa.getText());
+    	pesquisaAtual = pesquisa.getPesquisa(txtPesquisaP.getText());
     	if (pesquisaAtual == null) {
     		MainInicio.changeScreen("pesquisaErro");
     	} else {
     		MainInicio.changeScreen("pesquisa");
     	}
-	}*/
+	}
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {

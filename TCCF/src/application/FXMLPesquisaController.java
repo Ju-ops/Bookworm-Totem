@@ -29,9 +29,9 @@ public class FXMLPesquisaController implements Initializable {
     @FXML
     private Button btnVoltar, btnPesquisar;
     
-    pesquisa pesquisaAtualpesquisa;
+    pesquisa pesquisaAtual;
     
-    FXMLInicioController nome;
+    FXMLInicioController nome =  new FXMLInicioController();
 
 	@FXML
     void Sair() {
@@ -45,17 +45,17 @@ public class FXMLPesquisaController implements Initializable {
 	
 	@FXML
 	protected void Pesquisar(ActionEvent e) throws Exception {
-		pesquisaAtualpesquisa = pesquisa.getPesquisa(txtPesquisa.getText());
-    	if (pesquisaAtualpesquisa == null) {
+		pesquisaAtual = pesquisa.getPesquisa(nome + "");
+    	if (pesquisaAtual == null) {
     		MainInicio.changeScreen("pesquisaErro");
     	} else {
-    		//MainInicio.changeScreen("pesquisa");
+    		MainInicio.changeScreen("pesquisa");
     	}
 	}
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		lblAutor.setText(nome + "");
+		
 	}
 
 }
