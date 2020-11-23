@@ -82,7 +82,7 @@ public class MainInicio extends Application {
 		pesquisaErro = new Scene(fxmlPesquisaErro);
 		pesquisaErro.getStylesheets().add("CSS/application.css");
 		
-		primaryStage.initStyle(StageStyle.TRANSPARENT);
+		primaryStage.initStyle(StageStyle.UNDECORATED);
 		primaryStage.setScene(inicioScene);
 		primaryStage.show();
 	}
