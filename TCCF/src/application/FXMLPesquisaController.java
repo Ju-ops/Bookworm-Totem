@@ -3,7 +3,7 @@ package application;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import ClasseConexao.pesquisa;
+import ClasseConexao.produto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -29,9 +29,7 @@ public class FXMLPesquisaController implements Initializable {
     @FXML
     private Button btnVoltar, btnPesquisar;
     
-    pesquisa pesquisaAtual;
-    
-    FXMLInicioController nome =  new FXMLInicioController();
+    produto produtoAtual, pesquisaAtual;
 
 	@FXML
     void Sair() {
@@ -45,13 +43,13 @@ public class FXMLPesquisaController implements Initializable {
 	
 	@FXML
 	protected void Pesquisar(ActionEvent e) throws Exception {
-		pesquisaAtual = pesquisa.getPesquisa(nome + "");
-    	if (pesquisaAtual == null) {
-    		MainInicio.changeScreen("pesquisaErro");
-    	} else {
-    		MainInicio.changeScreen("pesquisa");
-    	}
+		
 	}
+	
+	@FXML
+    public void setPesquisa(String ow) {
+    	txtPesquisa.setText(ow);
+    }
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {

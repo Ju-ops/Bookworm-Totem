@@ -3,11 +3,13 @@ package application;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import ClasseConexao.pesquisa;
+import ClasseConexao.produto;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -24,7 +26,7 @@ public class FXMLInicioController implements Initializable {
     private Label lblTitulo, lbl, lblSair;
 
     @FXML
-    private TextField txtPesquisaP;
+    private TextField txtPesquisa;
 
     @FXML
     private Button btnPesquisar, btnAnterior, btnProximo;
@@ -44,7 +46,7 @@ public class FXMLInicioController implements Initializable {
     @FXML
     private AnchorPane apScroll;
     
-    pesquisa pesquisaAtual;
+    produto pesquisaAtual;
     
     @FXML
     void Sair() {
@@ -103,12 +105,12 @@ public class FXMLInicioController implements Initializable {
     
     @FXML
     protected void Pesquisar(ActionEvent e) throws Exception {
-    	pesquisaAtual = pesquisa.getPesquisa(txtPesquisaP.getText());
-    	if (pesquisaAtual == null) {
-    		MainInicio.changeScreen("pesquisaErro");
-    	} else {
-    		MainInicio.changeScreen("pesquisa");
-    	}
+    	FXMLLoader loader = new FXMLLoader(getClass().getResource("./FXMLPesquisa.fxml"));
+    	Scene scene = new Scene(loader.load());
+    	FXMLPesquisaController controller = loader.getController();
+    	controller.setPesquisa(txtPesquisa.getText());
+    	MainInicio.stage.setScene(scene);
+    	scene.getStylesheets().add("CSS/application.css");
 	}
 
 	@Override

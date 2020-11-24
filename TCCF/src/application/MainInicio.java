@@ -11,7 +11,7 @@ import javafx.scene.Scene;
 
 
 public class MainInicio extends Application {
-	private static Stage stage;
+	public static Stage stage;
 	private static Scene inicioScene;
 	private static Scene oIluminado;
 	private static Scene EmojiFilme;

@@ -3,6 +3,7 @@ package ClasseConexao;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 public class produto {
 	private int IDProduto;
@@ -146,10 +147,40 @@ public class produto {
 			ow.setDescricaoProd(rs.getString("DescricaoProd")); //fica com o valor dessa tabela
 			ow.setImagemProd(rs.getBytes("ImagemProd")); //fica com o valor dessa tabela
 			ow.setAnoEdicao(rs.getDate("AnoEdicao")); //fica com o valor dessa tabela
-			ow.setDisponiveis(rs.getInt("Disponiveis")); //fica com o valor dessa tabela
 			return ow; //retorna o valor de ow
 		}
 		return null; 
+	}
+	
+	public static produto[] getPesquisa(String nome) throws Exception {
+		ClasseConexao con = new ClasseConexao(); //instanciando
+		boolean su = con.conectar(); //conecta no banco
+		if (su == false) {
+			throw new Exception("Falha na conexão"); //se a coneccao der errado
+		}
+		PreparedStatement pstmt = con.getConn().prepareStatement("select * from tblProduto where lower(NomeLivro) like ? or lower(AutoresLivro) like ?"); //mensagem que eu vou mandar pro sql
+		//order by alfabeto
+		pstmt.setString(1, "%" + nome.toLowerCase() + "%"); //o primeiro "?"
+		pstmt.setString(2, "%" + nome.toLowerCase() + "%");
+		ResultSet rs = pstmt.executeQuery(); //o resultado do banco
+		ArrayList<produto> lista = new ArrayList<produto>();
+		while (rs.next()) { // se tiver um pra continuar, ou seja, se existir o produto
+			produto ow = new produto(); //instanciando
+			ow.setIDProduto(rs.getInt("IDProduto")); //fica com o valor dessa tabela
+			ow.setTipoAcervo(rs.getInt("TipoAcervo")); //fica com o valor dessa tabela
+			ow.setNomeLivro(rs.getString("NomeLivro")); //fica com o valor dessa tabela
+			ow.setAutoresLivro(rs.getString("AutoresLivro")); //fica com o valor dessa tabela
+			ow.setSetor(rs.getInt("Setor")); //fica com o valor dessa tabela
+			ow.setFileira(rs.getInt("Fileira")); //fica com o valor dessa tabela
+			ow.setPrateleira(rs.getInt("Prateleira")); //fica com o valor dessa tabela
+			ow.setTipoProduto(rs.getString("TipoProduto")); //fica com o valor dessa tabela
+			ow.setEditora(rs.getString("Editora")); //fica com o valor dessa tabela
+			ow.setDescricaoProd(rs.getString("DescricaoProd")); //fica com o valor dessa tabela
+			ow.setImagemProd(rs.getBytes("ImagemProd")); //fica com o valor dessa tabela
+			ow.setAnoEdicao(rs.getDate("AnoEdicao")); //fica com o valor dessa tabela
+			lista.add(ow); //retorna o valor de ow
+		}
+		return lista.toArray(); 
 	}	
 
 }
