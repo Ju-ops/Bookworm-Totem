@@ -180,7 +180,7 @@ public class produto {
 			ow.setAnoEdicao(rs.getDate("AnoEdicao")); //fica com o valor dessa tabela
 			lista.add(ow); //retorna o valor de ow
 		}
-		return lista.toArray(); 
+		return lista.toArray(new produto[lista.size()]); 
 	}	
 
 }
