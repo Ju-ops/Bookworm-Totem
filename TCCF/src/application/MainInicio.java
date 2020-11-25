@@ -25,6 +25,8 @@ public class MainInicio extends Application {
 	private static Scene stevenArtOrigins;
 	private static Scene pesquisa;
 	private static Scene pesquisaErro;
+	private static Scene resultado;
+	private static Scene aa;
 	
 	@Override
 	public void start(Stage primaryStage) throws IOException {
@@ -82,6 +84,14 @@ public class MainInicio extends Application {
 		pesquisaErro = new Scene(fxmlPesquisaErro);
 		pesquisaErro.getStylesheets().add("CSS/application.css");
 		
+		Parent fxmlResultado = FXMLLoader.load(getClass().getResource("../application/FXMLResultado.fxml"));
+		resultado = new Scene(fxmlResultado);
+		resultado.getStylesheets().add("CSS/application.css");
+		
+		Parent fxmlAAA = FXMLLoader.load(getClass().getResource("../application/FXMLModelo.fxml"));
+		aa = new Scene(fxmlAAA);
+		aa.getStylesheets().add("CSS/application.css");
+		
 		primaryStage.initStyle(StageStyle.UNDECORATED);
 		primaryStage.setScene(inicioScene);
 		primaryStage.show();
@@ -127,6 +137,12 @@ public class MainInicio extends Application {
 				break;
 			case "pesquisaErro":
 				stage.setScene(pesquisaErro);
+				break;
+			case "resultado":
+				stage.setScene(resultado);
+				break;
+			case "aa":
+				stage.setScene(aa);
 				break;
 		}
 	}

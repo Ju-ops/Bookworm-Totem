@@ -1,6 +1,10 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
 /*fx:controller="application.FXMLFilmeController" #19323C styleClass="text-text"*/
 
+.anchorPane{
+	-fx-background-color: transparent;
+}
+
 .text-field#txtPesquisa {
 	-fx-background-color: #AABBCC;
 	-fx-text-fill: #191919;
@@ -153,6 +157,12 @@
 	-fx-font-size: 35px;
 }
 
+.label#lblAviso {
+	-fx-text-fill: #FCFCFC;
+	-fx-font-size: 25px;
+	-fx-font-family: "Comic Sans MS";
+}
+
 .label#lblSair {
 	-fx-text-fill: #12242b;
 	-fx-font-size: 25px;
@@ -276,12 +286,14 @@
 	-fx-opacity: 80%;
 }
 
+.button#btnMudar,
 .button#btnLivroE,
 .button#btnLivroE2,
 .button#btnLivroE3 {
 	-fx-background-color: transparent;
 }
 
+.button:pressed#btnMudar,
 .button:pressed#btnLivroE,
 .button:pressed#btnLivroE2,
 .button:pressed#btnLivroE3 {
@@ -289,6 +301,7 @@
 	-fx-border-width: 0.15em;
 }
 
+.button:hover#btnMudar,
 .button:hover#btnLivroE,
 .button:hover#btnLivroE2,
 .button:hover#btnLivroE3 {

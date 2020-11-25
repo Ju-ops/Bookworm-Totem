@@ -104,13 +104,27 @@ public class FXMLInicioController implements Initializable {
 	}
     
     @FXML
+    protected void Livro8Scene(ActionEvent e) {
+		MainInicio.changeScreen("resultado");
+	}
+    
+    @FXML
+    protected void Livro9Scene(ActionEvent e) {
+		MainInicio.changeScreen("aa");
+	}
+    
+    @FXML
     protected void Pesquisar(ActionEvent e) throws Exception {
     	FXMLLoader loader = new FXMLLoader(getClass().getResource("./FXMLPesquisa.fxml"));
+    	
     	Scene scene = new Scene(loader.load());
+    	
     	FXMLPesquisaController controller = loader.getController();
-    	controller.setPesquisa(txtPesquisa.getText());
-    	MainInicio.stage.setScene(scene);
+    	String nomeLivro = txtPesquisa.getText();
+    	controller.setPesquisa(nomeLivro);
+    	
     	scene.getStylesheets().add("CSS/application.css");
+    	MainInicio.stage.setScene(scene);
 	}
 
 	@Override

@@ -10,6 +10,7 @@ public class produto {
 	private int TipoAcervo;
 	private String NomeLivro;
 	private String AutoresLivro;
+	private Date AnoEdicao;
 	private int Setor;
 	private int Fileira;
 	private int Prateleira;
@@ -17,8 +18,6 @@ public class produto {
 	private String Editora;
 	private String DescricaoProd;
 	private byte[] ImagemProd;
-	private Date AnoEdicao;
-	private int Disponiveis;
 	
 	public int getIDProduto() {
 		return IDProduto;
@@ -115,14 +114,6 @@ public class produto {
 	public void setAnoEdicao(Date anoEdicao) {
 		AnoEdicao = anoEdicao;
 	}
-
-	public int getDisponiveis() {
-		return Disponiveis;
-	}
-
-	public void setDisponiveis(int disponiveis) {
-		Disponiveis = disponiveis;
-	}
 	
 	public static produto getProduto(int id) throws Exception {
 		ClasseConexao con = new ClasseConexao(); //instanciando
@@ -139,6 +130,7 @@ public class produto {
 			ow.setTipoAcervo(rs.getInt("TipoAcervo")); //fica com o valor dessa tabela
 			ow.setNomeLivro(rs.getString("NomeLivro")); //fica com o valor dessa tabela
 			ow.setAutoresLivro(rs.getString("AutoresLivro")); //fica com o valor dessa tabela
+			ow.setAnoEdicao(rs.getDate("AnoEdicao")); //fica com o valor dessa tabela
 			ow.setSetor(rs.getInt("Setor")); //fica com o valor dessa tabela
 			ow.setFileira(rs.getInt("Fileira")); //fica com o valor dessa tabela
 			ow.setPrateleira(rs.getInt("Prateleira")); //fica com o valor dessa tabela
@@ -146,7 +138,6 @@ public class produto {
 			ow.setEditora(rs.getString("Editora")); //fica com o valor dessa tabela
 			ow.setDescricaoProd(rs.getString("DescricaoProd")); //fica com o valor dessa tabela
 			ow.setImagemProd(rs.getBytes("ImagemProd")); //fica com o valor dessa tabela
-			ow.setAnoEdicao(rs.getDate("AnoEdicao")); //fica com o valor dessa tabela
 			return ow; //retorna o valor de ow
 		}
 		return null; 
@@ -170,6 +161,7 @@ public class produto {
 			ow.setTipoAcervo(rs.getInt("TipoAcervo")); //fica com o valor dessa tabela
 			ow.setNomeLivro(rs.getString("NomeLivro")); //fica com o valor dessa tabela
 			ow.setAutoresLivro(rs.getString("AutoresLivro")); //fica com o valor dessa tabela
+			ow.setAnoEdicao(rs.getDate("AnoEdicao")); //fica com o valor dessa tabela
 			ow.setSetor(rs.getInt("Setor")); //fica com o valor dessa tabela
 			ow.setFileira(rs.getInt("Fileira")); //fica com o valor dessa tabela
 			ow.setPrateleira(rs.getInt("Prateleira")); //fica com o valor dessa tabela
@@ -177,10 +169,11 @@ public class produto {
 			ow.setEditora(rs.getString("Editora")); //fica com o valor dessa tabela
 			ow.setDescricaoProd(rs.getString("DescricaoProd")); //fica com o valor dessa tabela
 			ow.setImagemProd(rs.getBytes("ImagemProd")); //fica com o valor dessa tabela
-			ow.setAnoEdicao(rs.getDate("AnoEdicao")); //fica com o valor dessa tabela
 			lista.add(ow); //retorna o valor de ow
+			
+			System.out.println(ow.NomeLivro);
 		}
-		return lista.toArray(new produto[lista.size()]); 
+		return lista.toArray(new produto[lista.size()]);
 	}	
 
 }

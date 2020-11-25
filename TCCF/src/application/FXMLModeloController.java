@@ -37,7 +37,6 @@ public class FXMLModeloController implements Initializable{
 		lblAutor.setText(produtoAtual.getAutoresLivro());
 		lblGenero.setText("");
 		lblAno.setText("Editora: " + produtoAtual.getEditora() + "            Ano Edição: " + produtoAtual.getAnoEdicao() + "");
-		lblDisponiveis.setText("Exemplares disponíveis:  " + produtoAtual.getDisponiveis());
 		lblSinopse.setText(produtoAtual.getDescricaoProd());
     }
 
