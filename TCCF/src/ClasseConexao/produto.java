@@ -119,7 +119,7 @@ public class produto {
 		ClasseConexao con = new ClasseConexao(); //instanciando
 		boolean su = con.conectar(); //conecta no banco
 		if (su == false) {
-			throw new Exception("Falha na conexão"); //se a coneccao der errado
+			throw new Exception("Falha na conexão"); //se a conecao der errado
 		}
 		PreparedStatement pstmt = con.getConn().prepareStatement("select * from tblProduto where IDProduto = ?"); //mensagem que eu vou mandar pro sql
 		pstmt.setInt(1, id); //o primeiro "?"
@@ -169,11 +169,26 @@ public class produto {
 			ow.setEditora(rs.getString("Editora")); //fica com o valor dessa tabela
 			ow.setDescricaoProd(rs.getString("DescricaoProd")); //fica com o valor dessa tabela
 			ow.setImagemProd(rs.getBytes("ImagemProd")); //fica com o valor dessa tabela
-			lista.add(ow); //retorna o valor de ow
-			
-			System.out.println(ow.NomeLivro);
+			lista.add(ow); //adiciona o valor de ow em uma lista
 		}
 		return lista.toArray(new produto[lista.size()]);
-	}	
+	}
+	
+	public static String[] getGenero(int g) throws Exception {
+		ClasseConexao con = new ClasseConexao(); //instanciando
+		boolean su = con.conectar(); //conecta no banco
+		if (su == false) {
+			throw new Exception("Falha na conexão"); //se a coneccao der errado
+		}
+		PreparedStatement pstmt = con.getConn().prepareStatement("select NomeGenero from tblGenero where IDGenero in (select IDGenero from tblGeneroProduto where IDProduto = ?)"); //mensagem que eu vou mandar pro sql
+		//order by alfabeto
+		pstmt.setInt(1, g); //o primeiro "?"
+		ResultSet rs = pstmt.executeQuery(); //o resultado do banco
+		ArrayList<String> generos = new ArrayList<String>();
+		while (rs.next()) {
+			generos.add(rs.getString("NomeGenero"));
+		}
+		return generos.toArray(new String[generos.size()]);
+	}
 
 }

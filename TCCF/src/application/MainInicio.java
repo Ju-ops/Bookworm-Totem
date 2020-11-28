@@ -24,7 +24,6 @@ public class MainInicio extends Application {
 	private static Scene anjos;
 	private static Scene stevenArtOrigins;
 	private static Scene pesquisa;
-	private static Scene pesquisaErro;
 	private static Scene resultado;
 	private static Scene aa;
 	
@@ -80,10 +79,6 @@ public class MainInicio extends Application {
 		pesquisa = new Scene(fxmlPesquisa);
 		pesquisa.getStylesheets().add("CSS/application.css");
 		
-		Parent fxmlPesquisaErro = FXMLLoader.load(getClass().getResource("../application/FXMLPesquisaErro.fxml"));
-		pesquisaErro = new Scene(fxmlPesquisaErro);
-		pesquisaErro.getStylesheets().add("CSS/application.css");
-		
 		Parent fxmlResultado = FXMLLoader.load(getClass().getResource("../application/FXMLResultado.fxml"));
 		resultado = new Scene(fxmlResultado);
 		resultado.getStylesheets().add("CSS/application.css");
@@ -134,9 +129,6 @@ public class MainInicio extends Application {
 				break;
 			case "pesquisa":
 				stage.setScene(pesquisa);
-				break;
-			case "pesquisaErro":
-				stage.setScene(pesquisaErro);
 				break;
 			case "resultado":
 				stage.setScene(resultado);

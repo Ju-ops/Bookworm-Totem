@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 
 public class ClasseConexao {
 	private String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-	private String caminho = "jdbc:sqlserver://localhost\\MSSQLSERVER:1433;"+"DatabaseName=TCCGF";
+	private String caminho = "jdbc:sqlserver://localhost\\MSSQLSERVER:1433;"+"DatabaseName=BTCCF";
     private String usuario = "sa";
     private String senha = "12345";
     private Connection conn;

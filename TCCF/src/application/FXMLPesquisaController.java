@@ -54,11 +54,6 @@ public class FXMLPesquisaController implements Initializable {
 	}
 	
 	@FXML
-	protected void Pesquisar(ActionEvent e) throws Exception {
-		
-	}
-	
-	@FXML
     public void setPesquisa(String ow) throws Exception {
     	txtPesquisa.setText(ow);
     	Consulta();

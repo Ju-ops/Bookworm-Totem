@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="966.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="966.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLModeloController">
    <children>
       <ImageView fx:id="imgFundo" fitHeight="978.0" fitWidth="1131.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -16,7 +16,7 @@
          </image>
       </ImageView>
       <Label fx:id="lblTitulo" layoutX="165.0" layoutY="15.0" prefHeight="83.0" prefWidth="832.0" text="Biblioteca Bookworm" />
-      <Label fx:id="lblSair" layoutX="1231.0" layoutY="10.0" prefHeight="51.0" prefWidth="25.0" text="X" />
+      <Label fx:id="lblSair" layoutX="1231.0" layoutY="10.0" onMouseClicked="#Sair" prefHeight="51.0" prefWidth="25.0" text="X" />
       <ImageView fx:id="imgLogo" fitHeight="15.0" fitWidth="1018.0" layoutX="1018.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imgs/agenda.png" />

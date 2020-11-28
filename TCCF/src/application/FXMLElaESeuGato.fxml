@@ -51,7 +51,7 @@
       </ImageView>
       <Label fx:id="lblTituloL" layoutX="396.0" layoutY="302.0" prefHeight="20.0" prefWidth="500.0" text="Label" />
       <Label fx:id="lblAutor" layoutX="396.0" layoutY="342.0" prefHeight="20.0" prefWidth="500.0" text="Label" />
-      <Label fx:id="lblGenero" layoutX="396.0" layoutY="382.0" prefHeight="20.0" prefWidth="500.0" text="Label" />
+      <Label fx:id="lblGenero" layoutX="165.0" layoutY="690.0" prefHeight="20.0" prefWidth="500.0" text="Label" />
       <Label fx:id="lblAno" layoutX="396.0" layoutY="580.0" prefHeight="20.0" prefWidth="600.0" text="Label" />
       <Label fx:id="lblDisponiveis" layoutX="108.0" layoutY="632.0" prefHeight="20.0" prefWidth="500.0" text="Label" />
       <Text fx:id="lblSinopse" fill="#fcfcfc" layoutX="397.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-text" text="Text" wrappingWidth="784.0" />

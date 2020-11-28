@@ -33,7 +33,7 @@ public class FXMLElaESeuGatoController implements Initializable{
     @FXML
     private Text lblSinopse;
     
-    produto produtoAtual;
+    produto produtoAtual, generoAtual;
     
     @FXML
 	protected void Sair() {
@@ -61,8 +61,8 @@ public class FXMLElaESeuGatoController implements Initializable{
 		lblLocal.setText("Setor:  " + produtoAtual.getSetor() + "      Fileira:  " + produtoAtual.getFileira() + "     Preteleira:  " + produtoAtual.getPrateleira());
 		lblTituloL.setText(produtoAtual.getNomeLivro());
 		lblAutor.setText(produtoAtual.getAutoresLivro());
-		lblGenero.setText(null);
-		lblAno.setText("Editora: " + produtoAtual.getEditora() + "            Ano Edição: " + produtoAtual.getAnoEdicao() + "");
+		//lblGenero.setText(produtoAtual.getGenero());
+		lblAno.setText("Editora: " + produtoAtual.getEditora() + "     Ano Edição: " + produtoAtual.getAnoEdicao() + "");
 		lblSinopse.setText(produtoAtual.getDescricaoProd());
 	}
 

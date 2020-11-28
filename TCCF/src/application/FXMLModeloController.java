@@ -30,6 +30,11 @@ public class FXMLModeloController implements Initializable{
     
     produto produtoAtual;
     
+    @FXML
+	protected void Sair() {
+		System.exit(0);
+    }
+    
     public void setProduto(produto x) {
     	produtoAtual = x;
     	lblLocal.setText("Setor:  " + produtoAtual.getSetor() + "      Fileira:  " + produtoAtual.getFileira() + "     Preteleira:  " + produtoAtual.getPrateleira());

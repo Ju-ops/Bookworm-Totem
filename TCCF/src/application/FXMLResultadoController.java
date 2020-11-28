@@ -11,25 +11,33 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 
 public class FXMLResultadoController implements Initializable{
 	@FXML
     private AnchorPane apProduto;
 
     @FXML
-    private Label lblTituloL, lblAutor, lblGenero, lblAno;
+    private Label lblTituloL, lblAutor, lblGenero;
     
     @FXML
     private Button btnMudar;
     
+    @FXML
+    private Text lblAno;
+    
     produto produtoAtual;
     
-    public void setProduto(produto y) {
+    public void setProduto(produto y) throws Exception {
     	produtoAtual = y;
 		lblTituloL.setText(produtoAtual.getNomeLivro());
 		lblAutor.setText(produtoAtual.getAutoresLivro());
-		lblGenero.setText("");
-		lblAno.setText("Editora: " + produtoAtual.getEditora() + "            Ano Edição: " + produtoAtual.getAnoEdicao() + "");
+		lblAno.setText("Editora: " + produtoAtual.getEditora() + " Ano Edição: " + produtoAtual.getAnoEdicao() + "");
+		
+		//pegar o genero do produto pelo id do produto y
+		int id = produtoAtual.getIDProduto();
+		String[] genero = produto.getGenero(id);
+		lblGenero.setText(String.join(", ", genero));
     }
     
     @FXML
