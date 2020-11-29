@@ -6,6 +6,10 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import ClasseConexao.produto;
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.KeyValue;
+import javafx.animation.Timeline;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -53,66 +57,6 @@ public class FXMLInicioController implements Initializable {
     void Sair() {
     	System.exit(0);
     }
-    
-    @FXML
-    protected void ChangeScene(ActionEvent e) {
-		MainInicio.changeScreen("iluminado");
-	}
-    
-    @FXML
-    protected void FilmeScene(ActionEvent e) {
-		MainInicio.changeScreen("emoji");
-	}
-    
-    @FXML
-    protected void CDScene(ActionEvent e) {
-		MainInicio.changeScreen("aerosmith");
-	}
-    
-    @FXML
-    protected void RevistaScene(ActionEvent e) {
-		MainInicio.changeScreen("zelda");
-	}
-    
-    @FXML
-    protected void Livro2Scene(ActionEvent e) {
-		MainInicio.changeScreen("destinos");
-	}
-    
-    @FXML
-    protected void Livro3Scene(ActionEvent e) {
-		MainInicio.changeScreen("elaeseugato");
-	}
-    
-    @FXML
-    protected void Livro4Scene(ActionEvent e) {
-		MainInicio.changeScreen("witchAcademy");
-	}
-    
-    @FXML
-    protected void Livro5Scene(ActionEvent e) {
-		MainInicio.changeScreen("senhorDosAneis");
-	}
-    
-    @FXML
-    protected void Livro6Scene(ActionEvent e) {
-		MainInicio.changeScreen("anjos");
-	}
-    
-    @FXML
-    protected void Livro7Scene(ActionEvent e) {
-		MainInicio.changeScreen("stevenArtOrigins");
-	}
-    
-    @FXML
-    protected void Livro8Scene(ActionEvent e) {
-		MainInicio.changeScreen("resultado");
-	}
-    
-    @FXML
-    protected void Livro9Scene(ActionEvent e) {
-		MainInicio.changeScreen("aa");
-	}
     
     @FXML
     protected void Pesquisar(ActionEvent e) throws Exception {
@@ -259,31 +203,37 @@ public class FXMLInicioController implements Initializable {
 	
 	@FXML
     void Ir(ActionEvent event) {
-		
-    }
+		Animation sajuLindo = new Timeline(new KeyFrame(Duration.seconds(1), new KeyValue(spHAR.hvalueProperty(), 1)));
+		sajuLindo.play();
+	}
 
     @FXML
     void Voltar(ActionEvent event) {
-    	
+    	Animation sajuLindo = new Timeline(new KeyFrame(Duration.seconds(1), new KeyValue(spHAR.hvalueProperty(), 0)));
+		sajuLindo.play();
     }
     
     @FXML
     void Proximo(ActionEvent event) {
-		
+    	Animation sajuLindo = new Timeline(new KeyFrame(Duration.seconds(1), new KeyValue(spHR.hvalueProperty(), 1)));
+		sajuLindo.play();
     }
 
     @FXML
     void Anterior(ActionEvent event) {
-    	
+    	Animation sajuLindo = new Timeline(new KeyFrame(Duration.seconds(1), new KeyValue(spHR.hvalueProperty(), 0)));
+		sajuLindo.play();
     }
     
     @FXML
     void Seguinte(ActionEvent event) {
-		
+    	Animation sajuLindo = new Timeline(new KeyFrame(Duration.seconds(1), new KeyValue(spHF.hvalueProperty(), 1)));
+		sajuLindo.play();
     }
 
     @FXML
     void Antes(ActionEvent event) {
-    	
+    	Animation sajuLindo = new Timeline(new KeyFrame(Duration.seconds(1), new KeyValue(spHF.hvalueProperty(), 0)));
+		sajuLindo.play();
     }
 }
