@@ -1,8 +1,17 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
 /*fx:controller="application.FXMLFilmeController" #19323C styleClass="text-text"*/
 
+@font-face {
+	src: url(JosefinSans-Regular.ttf);
+}
+
 .anchorPane{
 	-fx-background-color: transparent;
+}
+
+.imagemFundo {
+	-fx-background-image:url(../imgs/FundoOpaco2.jpg); 
+	-fx-background-size: cover;
 }
 
 .text-field#txtPesquisa {
@@ -17,7 +26,7 @@
 .label {
 	-fx-text-fill: #19323C;
 	-fx-font-size: 87px;
-	-fx-font-family: "Comic Sans MS";
+	-fx-font-family: "Josefin Sans";
 }
 
 .separator {
@@ -33,7 +42,20 @@
 .text-text {
 	-fx-text-fill: #19323c;
 	-fx-font-size: 30px;
-	-fx-font-family: "Comic Sans MS";
+	-fx-font-family: "Josefin Sans";
+}
+
+.itemLivro {
+	-fx-background-color: transparent;
+}
+
+.itemLivro:pressed {
+	-fx-border-color: transparent;
+	-fx-border-width: 0.15em;
+}
+
+.itemLivro:hover {
+	-fx-opacity: 80%;
 }
 
 /* SCROLLs */
@@ -160,13 +182,13 @@
 .label#lblAviso {
 	-fx-text-fill: #FCFCFC;
 	-fx-font-size: 25px;
-	-fx-font-family: "Comic Sans MS";
+	-fx-font-family: "Josefin Sans";
 }
 
 .label#lblSair {
 	-fx-text-fill: #12242b;
 	-fx-font-size: 25px;
-	-fx-font-family: "Comic Sans MS";
+	-fx-font-family: "Josefin Sans";
 }
 
 .label#lblSair:hover {
@@ -174,12 +196,12 @@
 }
 
 .text-text#lblSinopse {
-	-fx-font-family: "Comic Sans MS";
+	-fx-font-family: "Josefin Sans";
 	-fx-font-size: 29px;
 }
 
 .text-text2#lblAviso {
-	-fx-font-family: "Comic Sans MS";
+	-fx-font-family: "Josefin Sans";
 	-fx-font-size: 45px;
 }
 

@@ -39,13 +39,13 @@
          <content>
             <AnchorPane fx:id="apScroll" opacity="0.94" prefHeight="700.0" prefWidth="1158.0">
                <children>
-                  <Label fx:id="lbl" layoutX="35.0" layoutY="5.0" prefHeight="38.0" prefWidth="325.0" text="Mais pesquisados" />
+                  <Label fx:id="lbl" layoutX="35.0" layoutY="5.0" prefHeight="38.0" prefWidth="985.0" text="Adicionados Recentemente" />
                   <ScrollPane fx:id="spHAR" layoutX="150.0" layoutY="-57.0" prefHeight="180.0" prefWidth="980.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="53.0">
                      <content>
-                        <HBox fx:id="hbAdicionadosRecentemente" spacing="70" prefHeight="175.0" prefWidth="188.0" />
+                        <HBox fx:id="hbAdicionadosRecentemente" prefHeight="175.0" prefWidth="188.0" spacing="70" />
                      </content>
                   </ScrollPane>
-                  <Label fx:id="lbl" layoutX="35.0" layoutY="220.0" prefHeight="38.0" prefWidth="497.0" text="Adicionados Recentemente" />
+                  <Label fx:id="lbl" layoutX="35.0" layoutY="220.0" prefHeight="38.0" prefWidth="497.0" text="Romances" />
                   <Button fx:id="btnAnterior" layoutX="35.0" layoutY="110.0" mnemonicParsing="false" onAction="#Voltar" prefHeight="51.0" prefWidth="54.0">
                      <graphic>
                         <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
@@ -75,7 +75,7 @@
                   </Button>
                   <ScrollPane fx:id="spHR" prefHeight="180.0" prefWidth="980.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="270.0">
                      <content>
-                        <HBox fx:id="hbRomance" spacing="70" prefHeight="175.0" prefWidth="200.0" />
+                        <HBox fx:id="hbRomance" prefHeight="175.0" prefWidth="200.0" spacing="70" />
                      </content>
                   </ScrollPane>
                   <Button fx:id="btnProximo" layoutX="1071.0" layoutY="322.0" mnemonicParsing="false" onAction="#Proximo" prefHeight="51.0" prefWidth="54.0">
@@ -96,10 +96,10 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Label fx:id="lbl" layoutX="35.0" layoutY="435.0" prefHeight="38.0" prefWidth="175.0" text="CDs" />
+                  <Label fx:id="lbl" layoutX="35.0" layoutY="435.0" prefHeight="38.0" prefWidth="1030.0" text="Ficção Científica" />
                   <ScrollPane fx:id="spHF" prefHeight="180.0" prefWidth="980.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="485.0">
                      <content>
-                        <HBox fx:id="hbFiccao" spacing="70" prefHeight="175.0" prefWidth="200.0" />
+                        <HBox fx:id="hbFiccao" prefHeight="175.0" prefWidth="200.0" spacing="70" />
                      </content>
                   </ScrollPane>
                   <Button fx:id="btnProximo" layoutX="1071.0" layoutY="534.0" mnemonicParsing="false" onAction="#Seguinte" prefHeight="51.0" prefWidth="54.0">

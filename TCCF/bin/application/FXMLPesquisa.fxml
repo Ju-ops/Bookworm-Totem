@@ -26,7 +26,7 @@
       </ImageView>
       <Rectangle fx:id="rtgPainel" arcHeight="15.0" arcWidth="15.0" fill="#19323cf2" height="562.0" layoutX="35.0" layoutY="128.0" stroke="#1a313b00" strokeDashOffset="10.0" strokeType="INSIDE" strokeWidth="5.0" width="1196.0" />
       <Label fx:id="lblAviso" layoutX="130.0" layoutY="250.0" />
-      <TextField fx:id="txtPesquisa" layoutX="107.0" layoutY="143.0" prefHeight="60.0" prefWidth="1094.0" promptText="Pesquise por título, gênero, autor ou editora" />
+      <TextField fx:id="txtPesquisa" layoutX="107.0" layoutY="143.0" prefHeight="60.0" prefWidth="1094.0" promptText="Pesquise por título, autor ou editora" />
       <Button fx:id="btnVoltar" layoutX="36.0" layoutY="142.0" mnemonicParsing="false" onAction="#Voltar">
          <graphic>
             <ImageView fitHeight="55.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">

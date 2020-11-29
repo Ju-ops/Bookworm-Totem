@@ -83,6 +83,7 @@ public class FXMLInicioController implements Initializable {
 				btnLivro.setMnemonicParsing(false);
 				btnLivro.setPrefWidth(95.0);
 				btnLivro.setPrefHeight(128.0);
+				btnLivro.getStyleClass().add("itemLivro");
 				
 				ImageView julianaSono = new ImageView(
 						new Image(
@@ -125,6 +126,7 @@ public class FXMLInicioController implements Initializable {
 				btnLivro.setMnemonicParsing(false);
 				btnLivro.setPrefWidth(95.0);
 				btnLivro.setPrefHeight(128.0);
+				btnLivro.getStyleClass().add("itemLivro");
 				
 				ImageView julianaSono = new ImageView(
 						new Image(
@@ -167,6 +169,7 @@ public class FXMLInicioController implements Initializable {
 				btnLivro.setMnemonicParsing(false);
 				btnLivro.setPrefWidth(95.0);
 				btnLivro.setPrefHeight(128.0);
+				btnLivro.getStyleClass().add("itemLivro");
 				
 				ImageView julianaSono = new ImageView(
 						new Image(
