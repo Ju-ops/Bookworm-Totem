@@ -11,7 +11,7 @@
    <children>
       <Button fx:id="btnMudar" layoutX="25.0" layoutY="29.0" mnemonicParsing="false" onAction="#Mudar">
          <graphic>
-            <ImageView fitHeight="365.0" fitWidth="289.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgLivro" fitHeight="365.0" fitWidth="289.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../imgs/agenda.png" />
                </image>
