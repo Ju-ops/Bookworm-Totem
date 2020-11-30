@@ -18,14 +18,14 @@
 	-fx-background-color: #AABBCC;
 	-fx-text-fill: #191919;
 	-fx-prompt-text-fill: #191919;
-	-fx-font-size: 25px;
+	-fx-font-size: 35px;
 	-fx-opacity: 75%;
 	-fx-font-family: "Josefin Sans";
 }
 
 .label {
 	-fx-text-fill: #19323C;
-	-fx-font-size: 87px;
+	-fx-font-size: 90px;
 	-fx-font-family: "Josefin Sans";
 }
 
@@ -136,52 +136,54 @@
 
 .label#lblLocal {
 	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 40px;
+	-fx-font-size: 50px;
 }
 
 .label#lblTituloL {
 	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 35px;
+	-fx-font-size: 45px;
 }
 
 .label#lblAutor {
 	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 33px;
+	-fx-font-size: 40px;
 }
 
 .label#lblGenero {
 	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 33px;
-}
-
-.label#lblDisponiveis {
-	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 28px;
-}
-
-.label#lblAno {
-	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 33px;
+	-fx-font-size: 40px;
 }
 
 .label#lblDiretor {
 	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 33px;
+	-fx-font-size: 40px;
 }
 
 .label#lblCompositor {
 	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 33px;
+	-fx-font-size: 40px;
 }
 
-.label#lbl {
+.label#lblEditora {
+	-fx-font-family: "Josefin Sans";
 	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 35px;
+	-fx-font-size: 40px;
+}
+
+.label#lblAno {
+	-fx-font-family: "Josefin Sans";
+	-fx-text-fill: #FCFCFC;
+	-fx-font-size: 40px;
+}
+
+.label#lblInicio {
+	-fx-text-fill: #FCFCFC;
+	-fx-font-size: 50px;
 }
 
 .label#lblAviso {
 	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 25px;
+	-fx-font-size: 45px;
 	-fx-font-family: "Josefin Sans";
 }
 
@@ -197,12 +199,12 @@
 
 .text-text#lblSinopse {
 	-fx-font-family: "Josefin Sans";
-	-fx-font-size: 29px;
+	-fx-font-size: 35px;
 }
 
 .text-text2#lblAviso {
 	-fx-font-family: "Josefin Sans";
-	-fx-font-size: 45px;
+	-fx-font-size: 35px;
 }
 
 /* IDs Buttons  */

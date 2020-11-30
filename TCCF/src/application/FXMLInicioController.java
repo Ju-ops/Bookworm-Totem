@@ -31,7 +31,7 @@ public class FXMLInicioController implements Initializable {
     private ImageView imgFundo, imgLogo;
 
     @FXML
-    private Label lblSair, lblTitulo, lbl;
+    private Label lblSair, lblTitulo, lblInicio;
 
     @FXML
     private Rectangle rtgPainel;
@@ -72,7 +72,7 @@ public class FXMLInicioController implements Initializable {
 	}
 
 	@Override
-	public void initialize(URL location, ResourceBundle resources) {
+	public void initialize(URL location, ResourceBundle resources){
 		try {
 			produto[] adicionadosRecentemente = produto.getAdicionadosRecentemente();
 			
@@ -80,8 +80,8 @@ public class FXMLInicioController implements Initializable {
 				Button btnLivro = new Button();
 				btnLivro.setLayoutY(14.0);
 				btnLivro.setMnemonicParsing(false);
-				btnLivro.setPrefWidth(95.0);
-				btnLivro.setPrefHeight(128.0);
+				btnLivro.setPrefWidth(158.0);
+				btnLivro.setPrefHeight(209.0);
 				btnLivro.getStyleClass().add("itemLivro");
 				
 				ImageView julianaSono = new ImageView(
@@ -90,7 +90,7 @@ public class FXMLInicioController implements Initializable {
 						)
 				);
 				julianaSono.setPreserveRatio(true);
-				julianaSono.setFitHeight(128.0);
+				julianaSono.setFitHeight(209.0);
 				btnLivro.setGraphic(julianaSono);
 				btnLivro.setOnAction(e -> {
 					FXMLLoader loader = new FXMLLoader(getClass().getResource("./FXMLModelo.fxml"));
@@ -104,7 +104,12 @@ public class FXMLInicioController implements Initializable {
 					}
 			    	
 			    	FXMLModeloController controller = loader.getController();
-			    	controller.setProduto(Item);
+			    	try {
+						controller.setProduto(Item);
+					} catch (Exception e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 			    	
 			    	scene.getStylesheets().add("CSS/application.css");
 			    	MainInicio.stage.setScene(scene);
@@ -123,8 +128,8 @@ public class FXMLInicioController implements Initializable {
 				Button btnLivro = new Button();
 				btnLivro.setLayoutY(14.0);
 				btnLivro.setMnemonicParsing(false);
-				btnLivro.setPrefWidth(95.0);
-				btnLivro.setPrefHeight(128.0);
+				btnLivro.setPrefWidth(158.0);
+				btnLivro.setPrefHeight(209.0);
 				btnLivro.getStyleClass().add("itemLivro");
 				
 				ImageView img = new ImageView(
@@ -133,7 +138,7 @@ public class FXMLInicioController implements Initializable {
 						)
 				);
 				img.setPreserveRatio(true);
-				img.setFitHeight(128.0);
+				img.setFitHeight(209.0);
 				btnLivro.setGraphic(img);
 				btnLivro.setOnAction(e -> {
 					FXMLLoader loader = new FXMLLoader(getClass().getResource("./FXMLModelo.fxml"));
@@ -147,7 +152,12 @@ public class FXMLInicioController implements Initializable {
 					}
 			    	
 			    	FXMLModeloController controller = loader.getController();
-			    	controller.setProduto(Item);
+			    	try {
+						controller.setProduto(Item);
+					} catch (Exception e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 			    	
 			    	scene.getStylesheets().add("CSS/application.css");
 			    	MainInicio.stage.setScene(scene);
@@ -166,8 +176,8 @@ public class FXMLInicioController implements Initializable {
 				Button btnLivro = new Button();
 				btnLivro.setLayoutY(14.0);
 				btnLivro.setMnemonicParsing(false);
-				btnLivro.setPrefWidth(95.0);
-				btnLivro.setPrefHeight(128.0);
+				btnLivro.setPrefWidth(158.0);
+				btnLivro.setPrefHeight(209.0);
 				btnLivro.getStyleClass().add("itemLivro");
 				
 				ImageView img = new ImageView(
@@ -176,7 +186,7 @@ public class FXMLInicioController implements Initializable {
 						)
 				);
 				img.setPreserveRatio(true);
-				img.setFitHeight(128.0);
+				img.setFitHeight(209.0);
 				btnLivro.setGraphic(img);
 				btnLivro.setOnAction(e -> {
 					FXMLLoader loader = new FXMLLoader(getClass().getResource("./FXMLModelo.fxml"));
@@ -190,7 +200,12 @@ public class FXMLInicioController implements Initializable {
 					}
 			    	
 			    	FXMLModeloController controller = loader.getController();
-			    	controller.setProduto(Item);
+			    	try {
+						controller.setProduto(Item);
+					} catch (Exception e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 			    	
 			    	scene.getStylesheets().add("CSS/application.css");
 			    	MainInicio.stage.setScene(scene);

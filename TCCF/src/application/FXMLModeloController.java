@@ -10,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -19,10 +20,13 @@ import javafx.scene.text.Text;
 
 public class FXMLModeloController implements Initializable{
 	@FXML
-    private ImageView imgFundo, imgLogo, imgLivro;
+    private ImageView imgLogo, imgLivro;
 
     @FXML
-    private Label lblTitulo, lblSair, lblLocal, lblTituloL, lblAutor, lblGenero, lblAno, lblDisponiveis;
+    private Label lblTitulo, lblSair, lblLocal, lblTituloL, lblAutor, lblGenero, lblAno, lblEditora;
+    
+    @FXML
+    private Button btnVoltar, btnPesquisar;
 
     @FXML
     private TextField txtPesquisa;
@@ -41,6 +45,11 @@ public class FXMLModeloController implements Initializable{
     }
     
     @FXML
+	protected void Voltar() {
+    	MainInicio.changeScreen("inicio");
+    }
+    
+    @FXML
     protected void Pesquisar(ActionEvent e) throws Exception {
     	FXMLLoader loader = new FXMLLoader(getClass().getResource("./FXMLPesquisa.fxml"));
     	
@@ -54,14 +63,18 @@ public class FXMLModeloController implements Initializable{
     	MainInicio.stage.setScene(scene);
 	}
     
-    public void setProduto(produto x) {
+    public void setProduto(produto x) throws Exception {
     	produtoAtual = x;
     	lblLocal.setText("Setor:  " + produtoAtual.getSetor() + "      Fileira:  " + produtoAtual.getFileira() + "     Preteleira:  " + produtoAtual.getPrateleira());
 		lblTituloL.setText(produtoAtual.getNomeLivro());
 		lblAutor.setText(produtoAtual.getAutoresLivro());
-		lblGenero.setText("");
-		lblAno.setText("Editora: " + produtoAtual.getEditora() + "            Ano Edição: " + produtoAtual.getAnoEdicao() + "");
+		lblEditora.setText("Editora: " + produtoAtual.getEditora());
+		lblAno.setText("Ano Edição: " + produtoAtual.getAnoEdicao());
 		lblSinopse.setText(produtoAtual.getDescricaoProd());
+		
+		int id = produtoAtual.getIDProduto();
+		String[] genero = produto.getGenero(id);
+		lblGenero.setText(String.join(", ", genero));
 		
 		Image imagemLivro = new Image(new ByteArrayInputStream(produtoAtual.getImagemProd()));
 		imgLivro.setImage(imagemLivro);

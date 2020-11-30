@@ -20,7 +20,7 @@ import javafx.scene.shape.Rectangle;
 
 public class FXMLPesquisaController implements Initializable {	
 	@FXML
-    private ImageView imgFundo, imgLogo;
+    private ImageView imgLogo;
 	
 	@FXML
     private Rectangle rtgPainel;

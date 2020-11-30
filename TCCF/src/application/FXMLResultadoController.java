@@ -54,7 +54,7 @@ public class FXMLResultadoController implements Initializable{
     }
     
     @FXML
-    void Mudar(ActionEvent event) throws IOException {
+    void Mudar(ActionEvent event) throws Exception {
     	FXMLLoader loader = new FXMLLoader(getClass().getResource("./FXMLModelo.fxml"));
     	
     	Scene scene = new Scene(loader.load());
