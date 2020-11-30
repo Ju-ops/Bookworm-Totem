@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
@@ -54,6 +55,20 @@ public class FXMLPesquisaController implements Initializable {
 	}
 	
 	@FXML
+    protected void Pesquisar(ActionEvent e) throws Exception {
+    	FXMLLoader loader = new FXMLLoader(getClass().getResource("./FXMLPesquisa.fxml"));
+    	
+    	Scene scene = new Scene(loader.load());
+    	
+    	FXMLPesquisaController controller = loader.getController();
+    	String nomeLivro = txtPesquisa.getText();
+    	controller.setPesquisa(nomeLivro);
+    	
+    	scene.getStylesheets().add("CSS/application.css");
+    	MainInicio.stage.setScene(scene);
+	}
+	
+	@FXML
     public void setPesquisa(String ow) throws Exception {
     	txtPesquisa.setText(ow);
     	Consulta();
@@ -68,17 +83,17 @@ public class FXMLPesquisaController implements Initializable {
 		//consulta no banco (ve se tem livro com letra igual as letra do textField)
 		//se tiver: mostra os resultado
 		//não tive: mostra que :( nao tem
-		String savio = txtPesquisa.getText();
+		String pesquisa = txtPesquisa.getText();
 		
-		produto[] resultadoSavio = produto.getPesquisa(savio);
-		int tamanhoResultadoSavio = resultadoSavio.length;
+		produto[] resultadoPesquisa = produto.getPesquisa(pesquisa);
+		int tamanhoResultadoPesquisa = resultadoPesquisa.length;
 		
-		if (tamanhoResultadoSavio == 0) {
+		if (tamanhoResultadoPesquisa == 0) {
 			//não tive: mostra que :( nao tem
 			lblAviso.setText("Parece que não há nada por aqui... Que tal tentar novamente?");
 		} else {
 			//se tiver: mostra os resultado			
-			for(produto Item : resultadoSavio) {
+			for(produto Item : resultadoPesquisa) {
 				FXMLLoader loader = new FXMLLoader(getClass().getResource("./FXMLResultado.fxml"));
 				
 				AnchorPane anchorPane = loader.load();

@@ -10,7 +10,6 @@ import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
-import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -118,7 +117,7 @@ public class FXMLInicioController implements Initializable {
 		}
 		
 		try {
-			produto[] aventura = produto.getGeneros("Aventura");
+			produto[] aventura = produto.getGeneros("Romance");
 			
 			for (produto Item : aventura) {
 				Button btnLivro = new Button();
@@ -128,14 +127,14 @@ public class FXMLInicioController implements Initializable {
 				btnLivro.setPrefHeight(128.0);
 				btnLivro.getStyleClass().add("itemLivro");
 				
-				ImageView julianaSono = new ImageView(
+				ImageView img = new ImageView(
 						new Image(
 								new ByteArrayInputStream(Item.getImagemProd())
 						)
 				);
-				julianaSono.setPreserveRatio(true);
-				julianaSono.setFitHeight(128.0);
-				btnLivro.setGraphic(julianaSono);
+				img.setPreserveRatio(true);
+				img.setFitHeight(128.0);
+				btnLivro.setGraphic(img);
 				btnLivro.setOnAction(e -> {
 					FXMLLoader loader = new FXMLLoader(getClass().getResource("./FXMLModelo.fxml"));
 			    	
@@ -171,14 +170,14 @@ public class FXMLInicioController implements Initializable {
 				btnLivro.setPrefHeight(128.0);
 				btnLivro.getStyleClass().add("itemLivro");
 				
-				ImageView julianaSono = new ImageView(
+				ImageView img = new ImageView(
 						new Image(
 								new ByteArrayInputStream(Item.getImagemProd())
 						)
 				);
-				julianaSono.setPreserveRatio(true);
-				julianaSono.setFitHeight(128.0);
-				btnLivro.setGraphic(julianaSono);
+				img.setPreserveRatio(true);
+				img.setFitHeight(128.0);
+				btnLivro.setGraphic(img);
 				btnLivro.setOnAction(e -> {
 					FXMLLoader loader = new FXMLLoader(getClass().getResource("./FXMLModelo.fxml"));
 			    	
@@ -206,8 +205,8 @@ public class FXMLInicioController implements Initializable {
 	
 	@FXML
     void Ir(ActionEvent event) {
-		Animation sajuLindo = new Timeline(new KeyFrame(Duration.seconds(1), new KeyValue(spHAR.hvalueProperty(), 1)));
-		sajuLindo.play();
+		Animation animation = new Timeline(new KeyFrame(Duration.seconds(1), new KeyValue(spHAR.hvalueProperty(), 1)));
+		animation.play();
 	}
 
     @FXML

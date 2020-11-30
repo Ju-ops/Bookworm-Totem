@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -20,12 +21,13 @@
       <Rectangle fx:id="rtgPainel" arcHeight="15.0" arcWidth="15.0" fill="#19323cf2" height="562.0" layoutX="35.0" layoutY="128.0" stroke="#1a313b00" strokeDashOffset="10.0" strokeType="INSIDE" strokeWidth="5.0" width="1196.0" />
       <TextField fx:id="txtPesquisa" layoutX="107.0" layoutY="143.0" prefHeight="51.0" prefWidth="1094.0" promptText="Pesquise por título, autor ou editora" />
       <Label fx:id="lblLocal" layoutX="121.0" layoutY="229.0" text="Label" />
-      <Label fx:id="lblTituloL" layoutX="296.0" layoutY="373.0" text="Label" />
-      <Label fx:id="lblAutor" layoutX="310.0" layoutY="459.0" text="Label" />
-      <Label fx:id="lblGenero" layoutX="296.0" layoutY="514.0" text="Label" />
-      <Label fx:id="lblAno" layoutX="296.0" layoutY="576.0" text="Label" />
+      <Label fx:id="lblTituloL" layoutX="339.0" layoutY="298.0" text="Label" />
+      <Label fx:id="lblAutor" layoutX="339.0" layoutY="388.0" text="Label" />
+      <Label fx:id="lblGenero" layoutX="339.0" layoutY="448.0" text="Label" />
+      <Label fx:id="lblAno" layoutX="382.0" layoutY="535.0" text="Label" />
       <Label fx:id="lblDisponiveis" layoutX="93.0" layoutY="643.0" text="Label" />
       <Text fx:id="lblSinopse" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <ImageView fx:id="imgLivro" fitHeight="150.0" fitWidth="200.0" layoutX="78.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgLivro" fitHeight="336.0" fitWidth="250.0" layoutX="78.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btn" layoutX="1128.0" layoutY="156.0" mnemonicParsing="false" onAction="#Pesquisar" text="Button" />
    </children>
 </AnchorPane>

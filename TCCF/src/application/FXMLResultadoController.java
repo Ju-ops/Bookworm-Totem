@@ -42,6 +42,8 @@ public class FXMLResultadoController implements Initializable{
 		lblAutor.setText(produtoAtual.getAutoresLivro());
 		lblAno.setText("Editora: " + produtoAtual.getEditora() + " Ano Edição: " + produtoAtual.getAnoEdicao() + "");
 		
+		btnMudar.getStyleClass().add("itemLivro");
+		
 		Image imagemLivro = new Image(new ByteArrayInputStream(produtoAtual.getImagemProd()));
 		imgLivro.setImage(imagemLivro);
 		
