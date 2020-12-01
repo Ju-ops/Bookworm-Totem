@@ -170,7 +170,7 @@ public class FXMLInicioController implements Initializable {
 		}
 		
 		try {
-			produto[] aventura = produto.getGeneros("Ficção Científica");
+			produto[] aventura = produto.getGeneros("Mangá");
 			
 			for (produto Item : aventura) {
 				Button btnLivro = new Button();
