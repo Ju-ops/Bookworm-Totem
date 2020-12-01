@@ -13,7 +13,7 @@
 <AnchorPane prefHeight="760.0" prefWidth="1320.0" styleClass="imagemFundo" stylesheets="@../CSS/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLInicioController">
    <children>
       <Label fx:id="lblSair" layoutX="1265.0" layoutY="10.0" onMouseClicked="#Sair" prefHeight="51.0" prefWidth="25.0" text="X" />
-      <Label fx:id="lblTitulo" layoutX="112.0" layoutY="12.0" prefHeight="111.0" prefWidth="861.0" text="Biblioteca Bookworm" />
+      <Label fx:id="lblTitulo" layoutX="112.0" layoutY="12.0" text="Biblioteca Bookworm" />
       <ImageView fx:id="imgLogo" fitHeight="105.0" fitWidth="114.0" layoutX="1018.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imgs/agenda.png" />
@@ -34,13 +34,13 @@
          <content>
             <AnchorPane fx:id="apScroll" opacity="0.94" prefHeight="900.0" prefWidth="1178.0">
                <children>
-                  <Label fx:id="lblInicio" layoutX="23.0" prefHeight="62.0" prefWidth="1094.0" text="Adicionados Recentemente" AnchorPane.leftAnchor="23.0" />
+                  <Label fx:id="lblInicio" layoutX="23.0" text="Adicionados Recentemente" AnchorPane.leftAnchor="23.0" />
                   <ScrollPane fx:id="spHAR" layoutX="84.0" layoutY="66.0" prefHeight="224.0" prefWidth="1020.0" AnchorPane.leftAnchor="84.0" AnchorPane.topAnchor="76.0">
                      <content>
                         <HBox fx:id="hbAdicionadosRecentemente" prefHeight="210.0" prefWidth="200.0" spacing="90" />
                      </content>
                   </ScrollPane>
-                  <Label fx:id="lblInicio" layoutX="23.0" layoutY="290.0" prefHeight="62.0" prefWidth="1094.0" text="Romances" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="310.0" />
+                  <Label fx:id="lblInicio" layoutX="23.0" layoutY="290.0" text="Romances" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="310.0" />
                   <Button fx:id="btnAnterior" layoutX="19.0" layoutY="150.0" mnemonicParsing="false" onAction="#Voltar" prefHeight="51.0" prefWidth="54.0">
                      <graphic>
                         <ImageView fitHeight="49.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
@@ -91,7 +91,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Label fx:id="lblInicio" layoutX="23.0" layoutY="580.0" prefHeight="38.0" prefWidth="1030.0" text="Mangás" AnchorPane.topAnchor="620.0" />
+                  <Label fx:id="lblInicio" layoutX="23.0" layoutY="580.0" text="Mangás" AnchorPane.topAnchor="620.0" />
                   <ScrollPane fx:id="spHF" prefHeight="224.0" prefWidth="1020.0" AnchorPane.leftAnchor="84.0" AnchorPane.topAnchor="695.0">
                      <content>
                         <HBox fx:id="hbFiccao" prefHeight="210.0" prefWidth="200.0" spacing="90" />

@@ -1,7 +1,6 @@
 package application;
 
 import java.io.ByteArrayInputStream;
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -16,20 +15,16 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.text.Text;
 
 public class FXMLResultadoController implements Initializable{
 	@FXML
     private AnchorPane apProduto;
 
     @FXML
-    private Label lblTituloL, lblAutor, lblGenero;
+    private Label lblTituloL, lblAutor, lblGenero, lblEditora, lblAno;
     
     @FXML
     private Button btnMudar;
-    
-    @FXML
-    private Text lblAno;
     
     @FXML
     private ImageView imgLivro;
@@ -40,7 +35,8 @@ public class FXMLResultadoController implements Initializable{
     	produtoAtual = y;
 		lblTituloL.setText(produtoAtual.getNomeLivro());
 		lblAutor.setText(produtoAtual.getAutoresLivro());
-		lblAno.setText("Editora: " + produtoAtual.getEditora() + " Ano Edição: " + produtoAtual.getAnoEdicao() + "");
+		lblEditora.setText("Editora: " + produtoAtual.getEditora());
+		lblAno.setText("Ano Edição: " + produtoAtual.getAnoEdicao());
 		
 		btnMudar.getStyleClass().add("itemLivro");
 		

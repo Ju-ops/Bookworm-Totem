@@ -65,7 +65,7 @@ public class FXMLModeloController implements Initializable{
     
     public void setProduto(produto x) throws Exception {
     	produtoAtual = x;
-    	lblLocal.setText("Setor:  " + produtoAtual.getSetor() + "      Fileira:  " + produtoAtual.getFileira() + "     Preteleira:  " + produtoAtual.getPrateleira());
+    	lblLocal.setText("Setor:  " + produtoAtual.getSetor() + "      Fileira:  " + produtoAtual.getFileira() + "     Prateleira:  " + produtoAtual.getPrateleira());
 		lblTituloL.setText(produtoAtual.getNomeLivro());
 		lblAutor.setText(produtoAtual.getAutoresLivro());
 		lblEditora.setText("Editora: " + produtoAtual.getEditora());

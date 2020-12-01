@@ -154,16 +154,6 @@
 	-fx-font-size: 40px;
 }
 
-.label#lblDiretor {
-	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 40px;
-}
-
-.label#lblCompositor {
-	-fx-text-fill: #FCFCFC;
-	-fx-font-size: 40px;
-}
-
 .label#lblEditora {
 	-fx-font-family: "Josefin Sans";
 	-fx-text-fill: #FCFCFC;

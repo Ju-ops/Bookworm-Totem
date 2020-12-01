@@ -13,7 +13,7 @@
 
 <AnchorPane maxHeight="-Infinity" prefHeight="760.0" prefWidth="1320.0" styleClass="imagemFundo" stylesheets="@../CSS/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLModeloController">
    <children>
-      <Label fx:id="lblTitulo" layoutX="112.0" layoutY="12.0" prefHeight="111.0" prefWidth="861.0" text="Biblioteca Bookworm" />
+      <Label fx:id="lblTitulo" layoutX="112.0" layoutY="12.0" text="Biblioteca Bookworm" />
       <Label fx:id="lblSair" layoutX="1265.0" layoutY="10.0" onMouseClicked="#Sair" prefHeight="51.0" prefWidth="25.0" text="X" />
       <ImageView fx:id="imgLogo" fitHeight="105.0" fitWidth="114.0" layoutX="1018.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -22,7 +22,7 @@
       </ImageView>
       <Rectangle fx:id="rtgPainel" arcHeight="15.0" arcWidth="15.0" fill="#19323cf2" height="602.0" layoutX="35.0" layoutY="128.0" stroke="#1a313b00" strokeDashOffset="10.0" strokeType="INSIDE" strokeWidth="5.0" width="1255.0" />
       <TextField fx:id="txtPesquisa" layoutX="112.0" layoutY="135.0" prefHeight="60.0" prefWidth="1134.0" promptText="Pesquise por título, autor ou editora" />
-      <Label fx:id="lblLocal" layoutX="112.0" layoutY="215.0" prefHeight="62.0" prefWidth="1094.0" text="Label" />
+      <Label fx:id="lblLocal" layoutX="112.0" layoutY="215.0" text="Label" />
       <ImageView fx:id="imgLivro" fitHeight="388.0" fitWidth="304.0" layoutX="112.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" />
       <Button fx:id="btnPesquisar" layoutX="1177.0" layoutY="144.0" mnemonicParsing="false" onAction="#Pesquisar" prefHeight="51.0" prefWidth="56.0">
          <graphic>
@@ -46,11 +46,11 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="831.0">
                <children>
-                  <Label fx:id="lblTituloL" prefHeight="57.0" text="Label" />
-                  <Label fx:id="lblAutor" prefHeight="49.0" text="Label" AnchorPane.topAnchor="60.0" />
-                  <Label fx:id="lblGenero" prefHeight="49.0" text="Label" AnchorPane.topAnchor="120.0" />
-                  <Label fx:id="lblEditora" prefHeight="49.0" text="Label" AnchorPane.topAnchor="180.0" />
-                  <Label fx:id="lblAno" prefHeight="49.0" text="Label" AnchorPane.topAnchor="240.0" />
+                  <Label fx:id="lblTituloL" text="Label" />
+                  <Label fx:id="lblAutor" text="Label" AnchorPane.topAnchor="60.0" />
+                  <Label fx:id="lblGenero" text="Label" AnchorPane.topAnchor="120.0" />
+                  <Label fx:id="lblEditora" text="Label" AnchorPane.topAnchor="180.0" />
+                  <Label fx:id="lblAno" text="Label" AnchorPane.topAnchor="240.0" />
                   <Text fx:id="lblSinopse" fill="#fcfcfc" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-text" text="Text" wrappingWidth="790.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="300.0">
                      <font>
                         <Font name="Josefin Sans Regular" size="12.0" />
