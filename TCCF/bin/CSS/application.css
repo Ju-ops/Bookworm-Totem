@@ -197,6 +197,11 @@
 	-fx-font-size: 35px;
 }
 
+.text-text3#lblAviso {
+	-fx-font-family: "Josefin Sans";
+	-fx-font-size: 45px;
+}
+
 /* IDs Buttons  */
 
 .button#btnPesquisar,

@@ -17,16 +17,20 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Text;
 
 public class FXMLPesquisaController implements Initializable {	
 	@FXML
-    private ImageView imgLogo;
+    private ImageView imgLogo, imgVazio;
 	
 	@FXML
     private Rectangle rtgPainel;
 
     @FXML
-    private Label lblSair, lblTitulo, lblAviso;
+    private Label lblSair, lblTitulo;
+    
+    @FXML
+    private Text lblAviso;
 
     @FXML
     private TextField txtPesquisa;
@@ -71,6 +75,8 @@ public class FXMLPesquisaController implements Initializable {
 	@FXML
     public void setPesquisa(String ow) throws Exception {
     	txtPesquisa.setText(ow);
+    	lblAviso.setText("");
+    	imgVazio.setOpacity(0);
     	Consulta();
     }
 
@@ -91,6 +97,7 @@ public class FXMLPesquisaController implements Initializable {
 		if (tamanhoResultadoPesquisa == 0) {
 			//não tive: mostra que :( nao tem
 			lblAviso.setText("Parece que não há nada por aqui... Que tal tentar novamente?");
+			imgVazio.setOpacity(1);
 		} else {
 			//se tiver: mostra os resultado			
 			for(produto Item : resultadoPesquisa) {

@@ -42,7 +42,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <ScrollPane layoutX="394.0" layoutY="290.0" prefHeight="429.0" prefWidth="853.0">
+      <ScrollPane layoutX="420.0" layoutY="290.0" prefHeight="429.0" prefWidth="853.0">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="831.0">
                <children>
